@@ -74,19 +74,75 @@ def plot_confusion_matrix(cm, labels=['Sehat', 'Cacat', 'Busuk']):
     )
     return fig
 
-def plot_wordcloud(text_data):
-    wordcloud = WordCloud(
-        width=900, height=500, 
-        background_color='#111111', 
-        colormap='cool',
-        contour_color='#00ffcc',
-        contour_width=2
-    ).generate(" ".join(text_data))
-    fig, ax = plt.subplots(figsize=(10, 5), facecolor='#111111')
-    ax.imshow(wordcloud, interpolation='bilinear')
-    ax.axis('off')
-    plt.title("Semantic Word Cloud (Kaggle Reviews)", color='#00ffcc', fontsize=14, pad=15)
-    plt.tight_layout()
+def plot_sentiment_treemap(text_data):
+    from collections import Counter
+    import plotly.express as px
+    import pandas as pd
+    
+    word_counts = Counter(text_data)
+    words = []
+    counts = []
+    categories = []
+    
+    # Categorize words based on sentiment logic for visualization
+    for w, c in word_counts.items():
+        words.append(w)
+        counts.append(c)
+        if w in ['busuk', 'jelek', 'kecewa', 'buruk', 'mahal', 'hancur', 'kecil']:
+            categories.append('Kritik & Keluhan')
+        elif w in ['bagus', 'manis', 'segar', 'enak', 'puas', 'murah', 'mantap', 'besar', 'kualitas']:
+            categories.append('Pujian Konsumen')
+        else:
+            categories.append('Atribut Operasional')
+            
+    df = pd.DataFrame({'Word': words, 'Count': counts, 'Category': categories})
+    
+    fig = px.treemap(
+        df, 
+        path=['Category', 'Word'], 
+        values='Count',
+        color='Category',
+        color_discrete_map={
+            'Kritik & Keluhan': '#ff3366',
+            'Pujian Konsumen': '#00ffcc',
+            'Atribut Operasional': '#888888'
+        },
+        title='<b>Hierarki Entitas Kunci (Treemap)</b><br><sup><i>Pemetaan Analitik Korpus Teks Konsumen</i></sup>'
+    )
+    
+    fig.update_layout(
+        template=TEMPLATE,
+        margin=dict(t=50, l=10, r=10, b=10)
+    )
+    return fig
+
+def plot_centrality_radar(centrality_dict):
+    import plotly.graph_objects as go
+    categories = list(centrality_dict.keys())
+    values = list(centrality_dict.values())
+    
+    # Close the polygon
+    categories.append(categories[0])
+    values.append(values[0])
+    
+    fig = go.Figure(data=go.Scatterpolar(
+      r=values,
+      theta=categories,
+      fill='toself',
+      fillcolor='rgba(0, 255, 204, 0.3)',
+      line=dict(color='#00ffcc', width=2)
+    ))
+    
+    fig.update_layout(
+      polar=dict(
+        radialaxis=dict(visible=True, range=[0, 1], gridcolor='#444444'),
+        angularaxis=dict(gridcolor='#444444')
+      ),
+      showlegend=False,
+      template=TEMPLATE,
+      margin=dict(t=30, b=30, l=30, r=30),
+      height=300
+    )
     return fig
 
 def plot_sentiment_distribution(sentimen_counts):

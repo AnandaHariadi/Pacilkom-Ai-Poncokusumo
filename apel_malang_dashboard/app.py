@@ -393,7 +393,7 @@ elif menu == "2. Kualitas Apel (CNN Vision)":
         
         if uploaded_file is not None:
             image = helpers.load_image(uploaded_file)
-            st.image(image, caption='Citra Input Asli', use_column_width=True)
+            st.image(image, caption='Citra Input Asli', use_container_width=True)
             
             if st.button("Inisiasi Deep Scan CNN"):
                 # Cool scanning effects
@@ -427,23 +427,27 @@ elif menu == "2. Kualitas Apel (CNN Vision)":
                 color = "green" if label == "Sehat" else ("red" if label == "Busuk" else "orange")
                 w, h = image.size
                 draw.rectangle([(w*0.1, h*0.1), (w*0.9, h*0.9)], outline=color, width=5)
-                st.image(image, caption="Hasil Deteksi (Bounding Box)", use_column_width=True)
+                st.image(image, caption="Hasil Deteksi (Bounding Box)", use_container_width=True)
                 st.markdown("</div>", unsafe_allow_html=True)
                 
-                st.success(f"**Klasifikasi Output Model:** {label}")
-                st.write("**Tingkat Kepercayaan (Confidence):**")
-                for k, v in conf.items():
-                    st.progress(v/100, text=f"{k}: {v}%")
-                    
                 st.session_state['cnn_image'] = processed_img
                 st.session_state['cnn_label'] = label
-                
-                df_result = pd.DataFrame([conf])
-                df_result['Predicted'] = label
-                st.markdown(helpers.create_download_link(df_result, "kualitas_apel_cnn.csv"), unsafe_allow_html=True)
+                st.session_state['cnn_conf'] = conf
 
     with col2:
         st.subheader("Explainable AI & Diagnostik Parameter")
+        
+        if 'cnn_label' in st.session_state and 'cnn_conf' in st.session_state:
+            st.success(f"**Klasifikasi Output Model:** {st.session_state['cnn_label']}")
+            st.write("**Tingkat Kepercayaan (Confidence):**")
+            for k, v in st.session_state['cnn_conf'].items():
+                st.progress(v/100, text=f"{k}: {v}%")
+                
+            df_result = pd.DataFrame([st.session_state['cnn_conf']])
+            df_result['Predicted'] = st.session_state['cnn_label']
+            st.markdown(helpers.create_download_link(df_result, "kualitas_apel_cnn.csv"), unsafe_allow_html=True)
+            st.markdown("---")
+            
         tab1, tab2, tab3, tab4 = st.tabs(["Distribusi Spektrum RGB", "Peta Aktivasi Grad-CAM", "Ekstraksi Hidden Layer", "Matriks Kinerja Kritis"])
         
         with tab1:
@@ -459,7 +463,7 @@ elif menu == "2. Kualitas Apel (CNN Vision)":
             if 'cnn_image' in st.session_state:
                 st.markdown("**Grad-CAM (Gradient-weighted Class Activation Mapping):** Menyoroti region deterministik (ROI) pada citra yang memicu gradien aktivasi kelas terbanyak pada layer *pooling* konvolusi terakhir.")
                 gradcam_img = gradcam_explain.generate_gradcam_overlay(st.session_state['cnn_image'])
-                st.image(gradcam_img, caption="Grad-CAM Spatial Heatmap", use_column_width=True)
+                st.image(gradcam_img, caption="Grad-CAM Spatial Heatmap", use_container_width=True)
             else:
                 st.info("Unggah dan jalankan inisiasi scan citra terlebih dahulu.")
                 
@@ -543,12 +547,13 @@ elif menu == "3. Persepsi Konsumen (NLP)":
         
     st.markdown("---")
     st.subheader("Topologi Semantik Korpus E-Commerce")
-    tabA, tabB, tabC = st.tabs(["Awan Kata (Word Cloud)", "Frekuensi Bi-Gram Tertinggi", "Proyeksi Word Embeddings 3D"])
+    tabA, tabB, tabC = st.tabs(["Hierarki Entitas Kunci (Treemap)", "Frekuensi Bi-Gram Tertinggi", "Proyeksi Word Embeddings 3D"])
     
     with tabA:
+        st.markdown("Pemetaan hierarkis topik sentimen dominan untuk identifikasi cepat klaster pujian dan keluhan konsumen.")
         words = nlp_model.get_mock_wordcloud_data()
-        fig_wc = visualization.plot_wordcloud(words)
-        st.pyplot(fig_wc)
+        fig_tm = visualization.plot_sentiment_treemap(words)
+        st.plotly_chart(fig_tm, use_container_width=True)
         
     with tabB:
         st.markdown("Frekuensi kemunculan gabungan kata (Bi-Gram) berdekatan yang paling tinggi dampaknya terhadap sentimen pasar.")
@@ -583,6 +588,9 @@ elif menu == "4. Integrasi Makro (GNN)":
         centrality = gnn_model.get_graph_centrality()
         for node, val in centrality.items():
             st.progress(val, text=f"Node [{node}]: {val}")
+            
+        fig_radar = visualization.plot_centrality_radar(centrality)
+        st.plotly_chart(fig_radar, use_container_width=True)
 
     st.markdown("---")
     st.subheader("Analisis Detail Topologi Jaringan GNN (Kaggle Referensi)")
