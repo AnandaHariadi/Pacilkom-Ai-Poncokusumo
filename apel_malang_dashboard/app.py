@@ -244,7 +244,9 @@ def get_image_base64(path):
     with open(path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode()
 
-path_logo = "assets/logo-1.png" # Pastikan folder assets dan file ini ada
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+path_logo = os.path.join(BASE_DIR, "assets", "logo-1.png") # Pastikan folder assets dan file ini ada
 
 if os.path.exists(path_logo):
     try:
@@ -536,7 +538,7 @@ elif menu == "3. Persepsi Konsumen (NLP)":
         st.markdown("</div>", unsafe_allow_html=True)
         
         try:
-            df_reviews = pd.read_csv("data/teks/ecommerce_apple_reviews.csv")
+            df_reviews = pd.read_csv(os.path.join(BASE_DIR, "..", "data", "teks", "ecommerce_apple_reviews.csv"))
             sentimen_dist = df_reviews['Sentiment'].value_counts().to_dict()
         except:
             sentimen_dist = nlp_model.get_mock_sentiment_distribution()

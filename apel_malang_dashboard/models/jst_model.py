@@ -18,7 +18,8 @@ def get_weather_data():
     if _df_weather is not None:
         return _df_weather
         
-    csv_path = "weather_classification_data.csv"
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    csv_path = os.path.join(base_dir, "weather_classification_data.csv")
     if not os.path.exists(csv_path):
         return pd.DataFrame() # Return empty if not found
         
