@@ -1,0 +1,1501 @@
+Review_ID,Text,Rating,Sentiment
+REV1000,"kualitas super, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1001,"murah dan bagus, packing aman. Sangat merekomendasikan.",5,Positif
+REV1002,"segar sekali, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1003,"kualitas super, cukup. Sangat merekomendasikan.",4,Positif
+REV1004,"kualitas super, not bad. Sangat merekomendasikan.",5,Positif
+REV1005,"seller ramah, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1006,"apel busuk, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV1007,"segar sekali, packing aman. Sangat merekomendasikan.",5,Positif
+REV1008,"Barang not bad, pengiriman standar.",3,Netral
+REV1009,"mantap, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1010,"Barang not bad, pengiriman standar.",3,Netral
+REV1011,"kecewa, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV1012,"seller ramah, packing aman. Sangat merekomendasikan.",5,Positif
+REV1013,"packing aman, not bad. Sangat merekomendasikan.",4,Positif
+REV1014,"ukuran kecil, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1015,"pengiriman cepat, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1016,"renyah, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1017,"pengiriman cepat, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1018,"renyah, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1019,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1020,"seller ramah, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1021,"banyak yang bonyok, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV1022,"mantap, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1023,"Barang lumayan, pengiriman standar.",3,Netral
+REV1024,"Barang cukup, pengiriman standar.",3,Netral
+REV1025,"Barang not bad, pengiriman standar.",3,Netral
+REV1026,"kualitas super, standar. Sangat merekomendasikan.",4,Positif
+REV1027,"kualitas super, cukup. Sangat merekomendasikan.",5,Positif
+REV1028,"murah dan bagus, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1029,"banyak yang bonyok, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV1030,"segar sekali, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1031,"sangat manis, packing aman. Sangat merekomendasikan.",5,Positif
+REV1032,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV1033,"segar sekali, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1034,"seller ramah, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1035,"packing aman, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1036,"pengiriman lambat, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV1037,"renyah, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1038,"murah dan bagus, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1039,"mantap, renyah. Sangat merekomendasikan.",5,Positif
+REV1040,"buahnya besar, packing aman. Sangat merekomendasikan.",4,Positif
+REV1041,"Barang standar, pengiriman standar.",3,Netral
+REV1042,"Barang cukup, pengiriman standar.",3,Netral
+REV1043,"kurang segar, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1044,"Barang not bad, pengiriman standar.",3,Netral
+REV1045,"segar sekali, lumayan. Sangat merekomendasikan.",5,Positif
+REV1046,"apel busuk, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV1047,"sangat manis, lumayan. Sangat merekomendasikan.",4,Positif
+REV1048,"seller ramah, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1049,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1050,"kecewa, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV1051,"renyah, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1052,"Barang cukup, pengiriman standar.",3,Netral
+REV1053,"kurang segar, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1054,"pengiriman lambat, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1055,"pengiriman cepat, packing aman. Sangat merekomendasikan.",4,Positif
+REV1056,"jelek, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV1057,"Barang oke, pengiriman standar.",3,Netral
+REV1058,"hancur, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1059,"mantap, standar. Sangat merekomendasikan.",4,Positif
+REV1060,"renyah, packing aman. Sangat merekomendasikan.",5,Positif
+REV1061,"pengiriman lambat, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV1062,"harga mahal, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1063,"sangat manis, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1064,"pengiriman cepat, renyah. Sangat merekomendasikan.",5,Positif
+REV1065,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1066,"hancur, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1067,"kurang segar, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1068,"mantap, oke. Sangat merekomendasikan.",4,Positif
+REV1069,"buahnya besar, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1070,"buahnya besar, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1071,"kualitas super, cukup. Sangat merekomendasikan.",4,Positif
+REV1072,"murah dan bagus, lumayan. Sangat merekomendasikan.",4,Positif
+REV1073,"kualitas super, mantap. Sangat merekomendasikan.",5,Positif
+REV1074,"seller ramah, renyah. Sangat merekomendasikan.",4,Positif
+REV1075,"packing aman, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1076,"murah dan bagus, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1077,"pengiriman cepat, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1078,"rasa hambar, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV1079,"Barang not bad, pengiriman standar.",3,Netral
+REV1080,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1081,"kecewa, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV1082,"renyah, renyah. Sangat merekomendasikan.",5,Positif
+REV1083,"buahnya besar, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1084,"Barang lumayan, pengiriman standar.",3,Netral
+REV1085,"mantap, lumayan. Sangat merekomendasikan.",4,Positif
+REV1086,"Barang cukup, pengiriman standar.",3,Netral
+REV1087,"sangat manis, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1088,"renyah, mantap. Sangat merekomendasikan.",4,Positif
+REV1089,"segar sekali, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1090,"segar sekali, not bad. Sangat merekomendasikan.",4,Positif
+REV1091,"kualitas super, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1092,"packing aman, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1093,"buahnya besar, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1094,"pengiriman cepat, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1095,"Barang not bad, pengiriman standar.",3,Netral
+REV1096,"pengiriman cepat, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1097,"buahnya besar, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1098,"seller ramah, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1099,"buahnya besar, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1100,"murah dan bagus, standar. Sangat merekomendasikan.",5,Positif
+REV1101,"banyak yang bonyok, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1102,"buahnya besar, oke. Sangat merekomendasikan.",4,Positif
+REV1103,"kualitas super, packing aman. Sangat merekomendasikan.",5,Positif
+REV1104,"segar sekali, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1105,"renyah, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1106,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1107,"buahnya besar, packing aman. Sangat merekomendasikan.",5,Positif
+REV1108,"mantap, packing aman. Sangat merekomendasikan.",5,Positif
+REV1109,"Barang lumayan, pengiriman standar.",3,Netral
+REV1110,"kualitas super, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1111,"segar sekali, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1112,"sangat manis, lumayan. Sangat merekomendasikan.",4,Positif
+REV1113,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1114,"buahnya besar, packing aman. Sangat merekomendasikan.",5,Positif
+REV1115,"ukuran kecil, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1116,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1117,"jelek, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1118,"mantap, not bad. Sangat merekomendasikan.",5,Positif
+REV1119,"harga mahal, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV1120,"packing aman, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1121,"segar sekali, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1122,"kualitas super, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1123,"renyah, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1124,"seller ramah, oke. Sangat merekomendasikan.",4,Positif
+REV1125,"sangat manis, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1126,"Barang lumayan, pengiriman standar.",3,Netral
+REV1127,"seller ramah, lumayan. Sangat merekomendasikan.",5,Positif
+REV1128,"rasa hambar, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV1129,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1130,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1131,"buahnya besar, oke. Sangat merekomendasikan.",5,Positif
+REV1132,"pengiriman cepat, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1133,"pengiriman cepat, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1134,"packing aman, packing aman. Sangat merekomendasikan.",4,Positif
+REV1135,"kualitas super, oke. Sangat merekomendasikan.",5,Positif
+REV1136,"buahnya besar, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1137,"apel busuk, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1138,"sangat manis, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1139,"kecewa, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1140,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1141,"packing aman, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1142,"kecewa, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1143,"Barang lumayan, pengiriman standar.",3,Netral
+REV1144,"pengiriman lambat, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1145,"apel busuk, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1146,"murah dan bagus, oke. Sangat merekomendasikan.",4,Positif
+REV1147,"ukuran kecil, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1148,"buahnya besar, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1149,"pengiriman cepat, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1150,"murah dan bagus, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1151,"sangat manis, not bad. Sangat merekomendasikan.",4,Positif
+REV1152,"buahnya besar, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1153,"renyah, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1154,"sangat manis, not bad. Sangat merekomendasikan.",5,Positif
+REV1155,"Barang cukup, pengiriman standar.",3,Netral
+REV1156,"jelek, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1157,"pengiriman cepat, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1158,"buahnya besar, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1159,"pengiriman cepat, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1160,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1161,"kualitas super, packing aman. Sangat merekomendasikan.",5,Positif
+REV1162,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1163,"kualitas super, not bad. Sangat merekomendasikan.",4,Positif
+REV1164,"segar sekali, not bad. Sangat merekomendasikan.",5,Positif
+REV1165,"hancur, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV1166,"mantap, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1167,"seller ramah, not bad. Sangat merekomendasikan.",5,Positif
+REV1168,"mantap, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1169,"renyah, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1170,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1171,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1172,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1173,"murah dan bagus, standar. Sangat merekomendasikan.",4,Positif
+REV1174,"Barang standar, pengiriman standar.",3,Netral
+REV1175,"murah dan bagus, oke. Sangat merekomendasikan.",5,Positif
+REV1176,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1177,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1178,"Barang lumayan, pengiriman standar.",3,Netral
+REV1179,"packing aman, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1180,"mantap, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1181,"kualitas super, cukup. Sangat merekomendasikan.",5,Positif
+REV1182,"segar sekali, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1183,"Barang oke, pengiriman standar.",3,Netral
+REV1184,"pengiriman lambat, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV1185,"kualitas super, packing aman. Sangat merekomendasikan.",5,Positif
+REV1186,"banyak yang bonyok, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV1187,"pengiriman cepat, oke. Sangat merekomendasikan.",4,Positif
+REV1188,"buahnya besar, mantap. Sangat merekomendasikan.",5,Positif
+REV1189,"mantap, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1190,"apel busuk, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1191,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1192,"pengiriman cepat, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1193,"kualitas super, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1194,"Barang not bad, pengiriman standar.",3,Netral
+REV1195,"Barang standar, pengiriman standar.",3,Netral
+REV1196,"murah dan bagus, mantap. Sangat merekomendasikan.",4,Positif
+REV1197,"hancur, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV1198,"banyak yang bonyok, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV1199,"murah dan bagus, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1200,"Barang cukup, pengiriman standar.",3,Netral
+REV1201,"murah dan bagus, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1202,"kualitas super, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1203,"murah dan bagus, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1204,"sangat manis, lumayan. Sangat merekomendasikan.",5,Positif
+REV1205,"pengiriman cepat, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1206,"Barang standar, pengiriman standar.",3,Netral
+REV1207,"Barang cukup, pengiriman standar.",3,Netral
+REV1208,"buahnya besar, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1209,"Barang not bad, pengiriman standar.",3,Netral
+REV1210,"sangat manis, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1211,"kualitas super, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1212,"jelek, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1213,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1214,"mantap, cukup. Sangat merekomendasikan.",5,Positif
+REV1215,"pengiriman cepat, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1216,"pengiriman cepat, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1217,"ukuran kecil, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV1218,"sangat manis, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1219,"segar sekali, packing aman. Sangat merekomendasikan.",5,Positif
+REV1220,"kualitas super, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1221,"buahnya besar, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1222,"hancur, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV1223,"segar sekali, renyah. Sangat merekomendasikan.",4,Positif
+REV1224,"pengiriman cepat, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1225,"apel busuk, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1226,"renyah, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1227,"segar sekali, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1228,"pengiriman cepat, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1229,"kurang segar, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1230,"Barang cukup, pengiriman standar.",3,Netral
+REV1231,"kecewa, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV1232,"harga mahal, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV1233,"murah dan bagus, packing aman. Sangat merekomendasikan.",4,Positif
+REV1234,"segar sekali, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1235,"segar sekali, standar. Sangat merekomendasikan.",4,Positif
+REV1236,"banyak yang bonyok, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1237,"kualitas super, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1238,"renyah, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1239,"seller ramah, cukup. Sangat merekomendasikan.",5,Positif
+REV1240,"banyak yang bonyok, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1241,"kualitas super, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1242,"pengiriman cepat, not bad. Sangat merekomendasikan.",4,Positif
+REV1243,"murah dan bagus, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1244,"kualitas super, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1245,"seller ramah, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1246,"banyak yang bonyok, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1247,"mantap, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1248,"rasa hambar, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1249,"mantap, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1250,"ukuran kecil, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1251,"kurang segar, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1252,"jelek, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1253,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1254,"banyak yang bonyok, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1255,"kualitas super, lumayan. Sangat merekomendasikan.",5,Positif
+REV1256,"mantap, lumayan. Sangat merekomendasikan.",4,Positif
+REV1257,"kualitas super, mantap. Sangat merekomendasikan.",4,Positif
+REV1258,"Barang not bad, pengiriman standar.",3,Netral
+REV1259,"ukuran kecil, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1260,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1261,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1262,"murah dan bagus, cukup. Sangat merekomendasikan.",4,Positif
+REV1263,"pengiriman cepat, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1264,"seller ramah, standar. Sangat merekomendasikan.",4,Positif
+REV1265,"pengiriman lambat, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1266,"mantap, mantap. Sangat merekomendasikan.",5,Positif
+REV1267,"seller ramah, cukup. Sangat merekomendasikan.",5,Positif
+REV1268,"sangat manis, mantap. Sangat merekomendasikan.",5,Positif
+REV1269,"murah dan bagus, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1270,"seller ramah, not bad. Sangat merekomendasikan.",4,Positif
+REV1271,"mantap, lumayan. Sangat merekomendasikan.",4,Positif
+REV1272,"Barang cukup, pengiriman standar.",3,Netral
+REV1273,"harga mahal, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1274,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1275,"buahnya besar, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1276,"pengiriman lambat, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV1277,"murah dan bagus, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1278,"mantap, lumayan. Sangat merekomendasikan.",5,Positif
+REV1279,"kualitas super, packing aman. Sangat merekomendasikan.",5,Positif
+REV1280,"murah dan bagus, packing aman. Sangat merekomendasikan.",5,Positif
+REV1281,"segar sekali, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1282,"sangat manis, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1283,"kecewa, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1284,"mantap, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1285,"packing aman, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1286,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1287,"segar sekali, standar. Sangat merekomendasikan.",4,Positif
+REV1288,"packing aman, standar. Sangat merekomendasikan.",5,Positif
+REV1289,"segar sekali, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1290,"Barang lumayan, pengiriman standar.",3,Netral
+REV1291,"kualitas super, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1292,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1293,"Barang standar, pengiriman standar.",3,Netral
+REV1294,"buahnya besar, oke. Sangat merekomendasikan.",4,Positif
+REV1295,"sangat manis, cukup. Sangat merekomendasikan.",4,Positif
+REV1296,"segar sekali, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1297,"packing aman, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1298,"harga mahal, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1299,"jelek, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1300,"renyah, oke. Sangat merekomendasikan.",5,Positif
+REV1301,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1302,"Barang not bad, pengiriman standar.",3,Netral
+REV1303,"seller ramah, cukup. Sangat merekomendasikan.",4,Positif
+REV1304,"Barang cukup, pengiriman standar.",3,Netral
+REV1305,"pengiriman cepat, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1306,"Barang cukup, pengiriman standar.",3,Netral
+REV1307,"ukuran kecil, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV1308,"ukuran kecil, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1309,"Barang cukup, pengiriman standar.",3,Netral
+REV1310,"segar sekali, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1311,"packing aman, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1312,"Barang oke, pengiriman standar.",3,Netral
+REV1313,"segar sekali, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1314,"renyah, lumayan. Sangat merekomendasikan.",4,Positif
+REV1315,"buahnya besar, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1316,"pengiriman cepat, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1317,"segar sekali, standar. Sangat merekomendasikan.",4,Positif
+REV1318,"Barang standar, pengiriman standar.",3,Netral
+REV1319,"kecewa, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV1320,"kurang segar, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1321,"banyak yang bonyok, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV1322,"harga mahal, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1323,"Barang lumayan, pengiriman standar.",3,Netral
+REV1324,"segar sekali, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1325,"seller ramah, not bad. Sangat merekomendasikan.",5,Positif
+REV1326,"sangat manis, not bad. Sangat merekomendasikan.",5,Positif
+REV1327,"kurang segar, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1328,"sangat manis, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV1329,"ukuran kecil, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1330,"seller ramah, cukup. Sangat merekomendasikan.",5,Positif
+REV1331,"buahnya besar, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1332,"segar sekali, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1333,"segar sekali, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1334,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1335,"packing aman, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1336,"seller ramah, lumayan. Sangat merekomendasikan.",4,Positif
+REV1337,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1338,"pengiriman cepat, oke. Sangat merekomendasikan.",4,Positif
+REV1339,"Barang standar, pengiriman standar.",3,Netral
+REV1340,"mantap, cukup. Sangat merekomendasikan.",4,Positif
+REV1341,"Barang lumayan, pengiriman standar.",3,Netral
+REV1342,"seller ramah, not bad. Sangat merekomendasikan.",4,Positif
+REV1343,"mantap, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1344,"kualitas super, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1345,"pengiriman lambat, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1346,"Barang standar, pengiriman standar.",3,Netral
+REV1347,"sangat manis, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1348,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1349,"renyah, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1350,"packing aman, lumayan. Sangat merekomendasikan.",5,Positif
+REV1351,"renyah, standar. Sangat merekomendasikan.",5,Positif
+REV1352,"murah dan bagus, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1353,"murah dan bagus, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1354,"packing aman, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1355,"buahnya besar, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1356,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1357,"kecewa, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1358,"sangat manis, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1359,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1360,"kecewa, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV1361,"mantap, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1362,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1363,"Barang standar, pengiriman standar.",3,Netral
+REV1364,"harga mahal, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1365,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1366,"segar sekali, oke. Sangat merekomendasikan.",5,Positif
+REV1367,"Barang oke, pengiriman standar.",3,Netral
+REV1368,"renyah, renyah. Sangat merekomendasikan.",4,Positif
+REV1369,"mantap, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1370,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1371,"Barang standar, pengiriman standar.",3,Netral
+REV1372,"murah dan bagus, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1373,"hancur, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV1374,"Barang oke, pengiriman standar.",3,Netral
+REV1375,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1376,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1377,"seller ramah, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1378,"kualitas super, not bad. Sangat merekomendasikan.",4,Positif
+REV1379,"segar sekali, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1380,"ukuran kecil, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1381,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1382,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1383,"sangat manis, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV1384,"jelek, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1385,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1386,"kualitas super, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1387,"renyah, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1388,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1389,"harga mahal, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV1390,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1391,"banyak yang bonyok, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1392,"pengiriman cepat, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1393,"pengiriman cepat, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1394,"murah dan bagus, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1395,"Barang not bad, pengiriman standar.",3,Netral
+REV1396,"packing aman, oke. Sangat merekomendasikan.",4,Positif
+REV1397,"seller ramah, not bad. Sangat merekomendasikan.",4,Positif
+REV1398,"murah dan bagus, lumayan. Sangat merekomendasikan.",4,Positif
+REV1399,"segar sekali, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1400,"murah dan bagus, oke. Sangat merekomendasikan.",4,Positif
+REV1401,"kecewa, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1402,"hancur, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1403,"seller ramah, lumayan. Sangat merekomendasikan.",5,Positif
+REV1404,"apel busuk, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1405,"renyah, renyah. Sangat merekomendasikan.",5,Positif
+REV1406,"harga mahal, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV1407,"renyah, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1408,"banyak yang bonyok, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1409,"mantap, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1410,"Barang not bad, pengiriman standar.",3,Netral
+REV1411,"sangat manis, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1412,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1413,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1414,"segar sekali, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1415,"Barang cukup, pengiriman standar.",3,Netral
+REV1416,"jelek, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV1417,"packing aman, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1418,"harga mahal, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1419,"kualitas super, mantap. Sangat merekomendasikan.",4,Positif
+REV1420,"segar sekali, standar. Sangat merekomendasikan.",4,Positif
+REV1421,"segar sekali, mantap. Sangat merekomendasikan.",4,Positif
+REV1422,"mantap, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1423,"packing aman, cukup. Sangat merekomendasikan.",5,Positif
+REV1424,"jelek, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV1425,"seller ramah, cukup. Sangat merekomendasikan.",5,Positif
+REV1426,"renyah, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1427,"packing aman, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1428,"Barang oke, pengiriman standar.",3,Netral
+REV1429,"ukuran kecil, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV1430,"kualitas super, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1431,"renyah, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1432,"buahnya besar, renyah. Sangat merekomendasikan.",4,Positif
+REV1433,"segar sekali, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1434,"packing aman, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1435,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1436,"buahnya besar, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1437,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1438,"segar sekali, mantap. Sangat merekomendasikan.",4,Positif
+REV1439,"kecewa, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV1440,"pengiriman cepat, mantap. Sangat merekomendasikan.",4,Positif
+REV1441,"Barang lumayan, pengiriman standar.",3,Netral
+REV1442,"buahnya besar, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1443,"Barang oke, pengiriman standar.",3,Netral
+REV1444,"sangat manis, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1445,"buahnya besar, mantap. Sangat merekomendasikan.",4,Positif
+REV1446,"pengiriman cepat, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1447,"kualitas super, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1448,"hancur, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV1449,"packing aman, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1450,"packing aman, lumayan. Sangat merekomendasikan.",4,Positif
+REV1451,"pengiriman cepat, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1452,"ukuran kecil, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1453,"kualitas super, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1454,"seller ramah, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1455,"kualitas super, not bad. Sangat merekomendasikan.",4,Positif
+REV1456,"sangat manis, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1457,"pengiriman cepat, not bad. Sangat merekomendasikan.",4,Positif
+REV1458,"murah dan bagus, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1459,"segar sekali, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1460,"buahnya besar, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1461,"mantap, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1462,"mantap, packing aman. Sangat merekomendasikan.",4,Positif
+REV1463,"jelek, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1464,"harga mahal, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1465,"murah dan bagus, not bad. Sangat merekomendasikan.",4,Positif
+REV1466,"kurang segar, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1467,"hancur, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1468,"sangat manis, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1469,"kualitas super, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1470,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1471,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1472,"pengiriman cepat, packing aman. Sangat merekomendasikan.",4,Positif
+REV1473,"pengiriman cepat, cukup. Sangat merekomendasikan.",4,Positif
+REV1474,"kualitas super, renyah. Sangat merekomendasikan.",5,Positif
+REV1475,"sangat manis, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1476,"packing aman, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1477,"Barang cukup, pengiriman standar.",3,Netral
+REV1478,"murah dan bagus, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1479,"segar sekali, mantap. Sangat merekomendasikan.",4,Positif
+REV1480,"Barang oke, pengiriman standar.",3,Netral
+REV1481,"packing aman, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1482,"segar sekali, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1483,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1484,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1485,"seller ramah, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1486,"Barang not bad, pengiriman standar.",3,Netral
+REV1487,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1488,"pengiriman cepat, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1489,"pengiriman lambat, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV1490,"Barang lumayan, pengiriman standar.",3,Netral
+REV1491,"pengiriman cepat, mantap. Sangat merekomendasikan.",5,Positif
+REV1492,"mantap, not bad. Sangat merekomendasikan.",4,Positif
+REV1493,"ukuran kecil, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1494,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1495,"harga mahal, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV1496,"seller ramah, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1497,"buahnya besar, cukup. Sangat merekomendasikan.",4,Positif
+REV1498,"harga mahal, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1499,"kualitas super, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1500,"sangat manis, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1501,"renyah, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1502,"murah dan bagus, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1503,"kualitas super, packing aman. Sangat merekomendasikan.",4,Positif
+REV1504,"mantap, not bad. Sangat merekomendasikan.",5,Positif
+REV1505,"sangat manis, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1506,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1507,"sangat manis, renyah. Sangat merekomendasikan.",4,Positif
+REV1508,"packing aman, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1509,"packing aman, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1510,"pengiriman lambat, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1511,"seller ramah, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1512,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1513,"harga mahal, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV1514,"seller ramah, lumayan. Sangat merekomendasikan.",5,Positif
+REV1515,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1516,"kualitas super, renyah. Sangat merekomendasikan.",4,Positif
+REV1517,"renyah, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1518,"harga mahal, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV1519,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1520,"buahnya besar, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1521,"harga mahal, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV1522,"renyah, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1523,"renyah, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1524,"kurang segar, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV1525,"Barang lumayan, pengiriman standar.",3,Netral
+REV1526,"buahnya besar, oke. Sangat merekomendasikan.",5,Positif
+REV1527,"seller ramah, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1528,"segar sekali, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1529,"renyah, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1530,"harga mahal, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1531,"apel busuk, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV1532,"murah dan bagus, cukup. Sangat merekomendasikan.",4,Positif
+REV1533,"Barang standar, pengiriman standar.",3,Netral
+REV1534,"murah dan bagus, oke. Sangat merekomendasikan.",5,Positif
+REV1535,"packing aman, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1536,"apel busuk, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1537,"segar sekali, renyah. Sangat merekomendasikan.",4,Positif
+REV1538,"ukuran kecil, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV1539,"apel busuk, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV1540,"kurang segar, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1541,"segar sekali, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1542,"Barang cukup, pengiriman standar.",3,Netral
+REV1543,"rasa hambar, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV1544,"harga mahal, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1545,"buahnya besar, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1546,"seller ramah, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1547,"packing aman, packing aman. Sangat merekomendasikan.",5,Positif
+REV1548,"packing aman, cukup. Sangat merekomendasikan.",5,Positif
+REV1549,"pengiriman cepat, standar. Sangat merekomendasikan.",5,Positif
+REV1550,"segar sekali, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1551,"Barang not bad, pengiriman standar.",3,Netral
+REV1552,"pengiriman cepat, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1553,"murah dan bagus, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1554,"renyah, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1555,"murah dan bagus, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1556,"ukuran kecil, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1557,"mantap, not bad. Sangat merekomendasikan.",5,Positif
+REV1558,"packing aman, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1559,"packing aman, cukup. Sangat merekomendasikan.",5,Positif
+REV1560,"packing aman, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1561,"renyah, cukup. Sangat merekomendasikan.",5,Positif
+REV1562,"buahnya besar, standar. Sangat merekomendasikan.",4,Positif
+REV1563,"packing aman, lumayan. Sangat merekomendasikan.",4,Positif
+REV1564,"segar sekali, packing aman. Sangat merekomendasikan.",4,Positif
+REV1565,"mantap, standar. Sangat merekomendasikan.",5,Positif
+REV1566,"kecewa, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1567,"apel busuk, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV1568,"Barang cukup, pengiriman standar.",3,Netral
+REV1569,"seller ramah, standar. Sangat merekomendasikan.",5,Positif
+REV1570,"pengiriman lambat, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1571,"apel busuk, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV1572,"jelek, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1573,"banyak yang bonyok, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV1574,"packing aman, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1575,"Barang not bad, pengiriman standar.",3,Netral
+REV1576,"Barang cukup, pengiriman standar.",3,Netral
+REV1577,"sangat manis, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1578,"seller ramah, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1579,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1580,"packing aman, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1581,"renyah, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1582,"seller ramah, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1583,"banyak yang bonyok, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1584,"seller ramah, lumayan. Sangat merekomendasikan.",4,Positif
+REV1585,"packing aman, cukup. Sangat merekomendasikan.",4,Positif
+REV1586,"sangat manis, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1587,"kualitas super, packing aman. Sangat merekomendasikan.",5,Positif
+REV1588,"murah dan bagus, packing aman. Sangat merekomendasikan.",4,Positif
+REV1589,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1590,"seller ramah, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1591,"rasa hambar, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1592,"pengiriman cepat, mantap. Sangat merekomendasikan.",4,Positif
+REV1593,"sangat manis, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1594,"renyah, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1595,"murah dan bagus, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1596,"renyah, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1597,"pengiriman cepat, packing aman. Sangat merekomendasikan.",4,Positif
+REV1598,"buahnya besar, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1599,"mantap, renyah. Sangat merekomendasikan.",4,Positif
+REV1600,"pengiriman cepat, renyah. Sangat merekomendasikan.",4,Positif
+REV1601,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1602,"mantap, standar. Sangat merekomendasikan.",5,Positif
+REV1603,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1604,"segar sekali, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1605,"mantap, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1606,"segar sekali, oke. Sangat merekomendasikan.",5,Positif
+REV1607,"ukuran kecil, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1608,"ukuran kecil, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1609,"packing aman, mantap. Sangat merekomendasikan.",4,Positif
+REV1610,"jelek, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1611,"kualitas super, oke. Sangat merekomendasikan.",5,Positif
+REV1612,"renyah, not bad. Sangat merekomendasikan.",4,Positif
+REV1613,"ukuran kecil, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1614,"murah dan bagus, oke. Sangat merekomendasikan.",5,Positif
+REV1615,"murah dan bagus, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1616,"seller ramah, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1617,"kualitas super, packing aman. Sangat merekomendasikan.",4,Positif
+REV1618,"seller ramah, not bad. Sangat merekomendasikan.",4,Positif
+REV1619,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1620,"mantap, mantap. Sangat merekomendasikan.",5,Positif
+REV1621,"Barang oke, pengiriman standar.",3,Netral
+REV1622,"sangat manis, standar. Sangat merekomendasikan.",4,Positif
+REV1623,"murah dan bagus, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1624,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1625,"Barang lumayan, pengiriman standar.",3,Netral
+REV1626,"mantap, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1627,"murah dan bagus, packing aman. Sangat merekomendasikan.",5,Positif
+REV1628,"mantap, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV1629,"segar sekali, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1630,"mantap, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1631,"pengiriman cepat, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1632,"sangat manis, mantap. Sangat merekomendasikan.",5,Positif
+REV1633,"packing aman, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1634,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1635,"banyak yang bonyok, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV1636,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1637,"murah dan bagus, lumayan. Sangat merekomendasikan.",4,Positif
+REV1638,"seller ramah, renyah. Sangat merekomendasikan.",5,Positif
+REV1639,"segar sekali, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1640,"buahnya besar, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1641,"buahnya besar, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1642,"Barang oke, pengiriman standar.",3,Netral
+REV1643,"pengiriman cepat, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV1644,"packing aman, mantap. Sangat merekomendasikan.",5,Positif
+REV1645,"banyak yang bonyok, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1646,"Barang cukup, pengiriman standar.",3,Netral
+REV1647,"kualitas super, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1648,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1649,"seller ramah, cukup. Sangat merekomendasikan.",4,Positif
+REV1650,"renyah, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1651,"seller ramah, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1652,"murah dan bagus, cukup. Sangat merekomendasikan.",5,Positif
+REV1653,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1654,"packing aman, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1655,"ukuran kecil, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV1656,"seller ramah, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1657,"kualitas super, packing aman. Sangat merekomendasikan.",5,Positif
+REV1658,"packing aman, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1659,"mantap, cukup. Sangat merekomendasikan.",4,Positif
+REV1660,"renyah, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1661,"segar sekali, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1662,"packing aman, mantap. Sangat merekomendasikan.",4,Positif
+REV1663,"seller ramah, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1664,"pengiriman cepat, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1665,"sangat manis, mantap. Sangat merekomendasikan.",4,Positif
+REV1666,"harga mahal, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1667,"kualitas super, packing aman. Sangat merekomendasikan.",5,Positif
+REV1668,"buahnya besar, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1669,"seller ramah, oke. Sangat merekomendasikan.",5,Positif
+REV1670,"renyah, cukup. Sangat merekomendasikan.",4,Positif
+REV1671,"kurang segar, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV1672,"pengiriman lambat, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1673,"kualitas super, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1674,"mantap, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1675,"Barang oke, pengiriman standar.",3,Netral
+REV1676,"sangat manis, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1677,"kecewa, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1678,"packing aman, packing aman. Sangat merekomendasikan.",4,Positif
+REV1679,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1680,"kualitas super, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1681,"buahnya besar, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1682,"sangat manis, standar. Sangat merekomendasikan.",5,Positif
+REV1683,"ukuran kecil, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV1684,"kualitas super, oke. Sangat merekomendasikan.",4,Positif
+REV1685,"kualitas super, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1686,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1687,"sangat manis, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1688,"banyak yang bonyok, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV1689,"pengiriman lambat, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV1690,"segar sekali, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1691,"Barang not bad, pengiriman standar.",3,Netral
+REV1692,"segar sekali, not bad. Sangat merekomendasikan.",5,Positif
+REV1693,"segar sekali, packing aman. Sangat merekomendasikan.",5,Positif
+REV1694,"renyah, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1695,"mantap, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1696,"Barang oke, pengiriman standar.",3,Netral
+REV1697,"Barang standar, pengiriman standar.",3,Netral
+REV1698,"pengiriman cepat, cukup. Sangat merekomendasikan.",4,Positif
+REV1699,"ukuran kecil, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1700,"kualitas super, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1701,"pengiriman lambat, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV1702,"banyak yang bonyok, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV1703,"mantap, lumayan. Sangat merekomendasikan.",4,Positif
+REV1704,"sangat manis, renyah. Sangat merekomendasikan.",5,Positif
+REV1705,"ukuran kecil, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1706,"Barang standar, pengiriman standar.",3,Netral
+REV1707,"seller ramah, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1708,"kualitas super, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1709,"Barang cukup, pengiriman standar.",3,Netral
+REV1710,"Barang cukup, pengiriman standar.",3,Netral
+REV1711,"banyak yang bonyok, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1712,"mantap, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1713,"packing aman, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1714,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1715,"hancur, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV1716,"jelek, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1717,"harga mahal, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1718,"Barang lumayan, pengiriman standar.",3,Netral
+REV1719,"Barang cukup, pengiriman standar.",3,Netral
+REV1720,"kurang segar, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1721,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1722,"Barang cukup, pengiriman standar.",3,Netral
+REV1723,"packing aman, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1724,"kualitas super, lumayan. Sangat merekomendasikan.",4,Positif
+REV1725,"mantap, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1726,"kualitas super, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1727,"murah dan bagus, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1728,"hancur, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1729,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1730,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1731,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1732,"buahnya besar, mantap. Sangat merekomendasikan.",5,Positif
+REV1733,"packing aman, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1734,"mantap, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1735,"rasa hambar, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV1736,"buahnya besar, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1737,"seller ramah, oke. Sangat merekomendasikan.",4,Positif
+REV1738,"segar sekali, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1739,"renyah, oke. Sangat merekomendasikan.",5,Positif
+REV1740,"kurang segar, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1741,"kualitas super, lumayan. Sangat merekomendasikan.",5,Positif
+REV1742,"seller ramah, lumayan. Sangat merekomendasikan.",4,Positif
+REV1743,"ukuran kecil, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV1744,"pengiriman lambat, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1745,"kualitas super, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1746,"kualitas super, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1747,"seller ramah, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1748,"renyah, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1749,"buahnya besar, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1750,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1751,"jelek, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1752,"renyah, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1753,"kurang segar, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV1754,"seller ramah, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1755,"ukuran kecil, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV1756,"murah dan bagus, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV1757,"rasa hambar, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1758,"buahnya besar, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1759,"pengiriman lambat, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1760,"segar sekali, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1761,"renyah, cukup. Sangat merekomendasikan.",5,Positif
+REV1762,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1763,"rasa hambar, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1764,"mantap, packing aman. Sangat merekomendasikan.",4,Positif
+REV1765,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1766,"buahnya besar, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1767,"mantap, cukup. Sangat merekomendasikan.",5,Positif
+REV1768,"sangat manis, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1769,"Barang oke, pengiriman standar.",3,Netral
+REV1770,"apel busuk, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1771,"murah dan bagus, mantap. Sangat merekomendasikan.",4,Positif
+REV1772,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1773,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1774,"sangat manis, renyah. Sangat merekomendasikan.",4,Positif
+REV1775,"Barang standar, pengiriman standar.",3,Netral
+REV1776,"hancur, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1777,"kualitas super, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1778,"Barang lumayan, pengiriman standar.",3,Netral
+REV1779,"kualitas super, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1780,"segar sekali, standar. Sangat merekomendasikan.",5,Positif
+REV1781,"seller ramah, oke. Sangat merekomendasikan.",4,Positif
+REV1782,"renyah, renyah. Sangat merekomendasikan.",4,Positif
+REV1783,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1784,"Barang oke, pengiriman standar.",3,Netral
+REV1785,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1786,"hancur, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1787,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1788,"Barang lumayan, pengiriman standar.",3,Netral
+REV1789,"Barang standar, pengiriman standar.",3,Netral
+REV1790,"pengiriman cepat, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1791,"sangat manis, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1792,"ukuran kecil, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1793,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1794,"packing aman, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1795,"packing aman, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1796,"murah dan bagus, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1797,"buahnya besar, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1798,"renyah, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1799,"kualitas super, mantap. Sangat merekomendasikan.",5,Positif
+REV1800,"mantap, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1801,"Barang not bad, pengiriman standar.",3,Netral
+REV1802,"Barang oke, pengiriman standar.",3,Netral
+REV1803,"Barang lumayan, pengiriman standar.",3,Netral
+REV1804,"kecewa, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1805,"hancur, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1806,"sangat manis, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1807,"murah dan bagus, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1808,"pengiriman lambat, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV1809,"murah dan bagus, lumayan. Sangat merekomendasikan.",4,Positif
+REV1810,"kualitas super, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1811,"Barang cukup, pengiriman standar.",3,Netral
+REV1812,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1813,"pengiriman cepat, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1814,"seller ramah, cukup. Sangat merekomendasikan.",4,Positif
+REV1815,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1816,"buahnya besar, cukup. Sangat merekomendasikan.",5,Positif
+REV1817,"banyak yang bonyok, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1818,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1819,"apel busuk, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1820,"apel busuk, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV1821,"kualitas super, lumayan. Sangat merekomendasikan.",4,Positif
+REV1822,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1823,"kurang segar, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1824,"seller ramah, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1825,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1826,"kurang segar, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1827,"renyah, renyah. Sangat merekomendasikan.",4,Positif
+REV1828,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1829,"packing aman, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV1830,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1831,"seller ramah, segar sekali. Sangat merekomendasikan.",4,Positif
+REV1832,"segar sekali, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1833,"mantap, standar. Sangat merekomendasikan.",5,Positif
+REV1834,"buahnya besar, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1835,"seller ramah, mantap. Sangat merekomendasikan.",4,Positif
+REV1836,"renyah, packing aman. Sangat merekomendasikan.",4,Positif
+REV1837,"banyak yang bonyok, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1838,"kualitas super, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1839,"kualitas super, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1840,"buahnya besar, seller ramah. Sangat merekomendasikan.",4,Positif
+REV1841,"banyak yang bonyok, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV1842,"pengiriman cepat, packing aman. Sangat merekomendasikan.",4,Positif
+REV1843,"kualitas super, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1844,"Barang oke, pengiriman standar.",3,Netral
+REV1845,"segar sekali, renyah. Sangat merekomendasikan.",4,Positif
+REV1846,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1847,"pengiriman cepat, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1848,"pengiriman cepat, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV1849,"packing aman, not bad. Sangat merekomendasikan.",4,Positif
+REV1850,"mantap, oke. Sangat merekomendasikan.",5,Positif
+REV1851,"mantap, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1852,"renyah, lumayan. Sangat merekomendasikan.",5,Positif
+REV1853,"pengiriman lambat, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1854,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1855,"Barang cukup, pengiriman standar.",3,Netral
+REV1856,"harga mahal, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV1857,"ukuran kecil, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV1858,"sangat manis, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1859,"buahnya besar, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1860,"Barang oke, pengiriman standar.",3,Netral
+REV1861,"packing aman, oke. Sangat merekomendasikan.",5,Positif
+REV1862,"apel busuk, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1863,"renyah, mantap. Sangat merekomendasikan.",5,Positif
+REV1864,"kualitas super, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1865,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1866,"mantap, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1867,"seller ramah, oke. Sangat merekomendasikan.",4,Positif
+REV1868,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1869,"buahnya besar, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1870,"packing aman, not bad. Sangat merekomendasikan.",5,Positif
+REV1871,"segar sekali, lumayan. Sangat merekomendasikan.",4,Positif
+REV1872,"mantap, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1873,"Barang not bad, pengiriman standar.",3,Netral
+REV1874,"pengiriman cepat, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1875,"Barang cukup, pengiriman standar.",3,Netral
+REV1876,"kualitas super, lumayan. Sangat merekomendasikan.",4,Positif
+REV1877,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1878,"jelek, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1879,"Barang lumayan, pengiriman standar.",3,Netral
+REV1880,"segar sekali, oke. Sangat merekomendasikan.",5,Positif
+REV1881,"harga mahal, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV1882,"buahnya besar, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1883,"Barang standar, pengiriman standar.",3,Netral
+REV1884,"banyak yang bonyok, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV1885,"Barang oke, pengiriman standar.",3,Netral
+REV1886,"seller ramah, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1887,"renyah, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1888,"Barang lumayan, pengiriman standar.",3,Netral
+REV1889,"banyak yang bonyok, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1890,"renyah, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1891,"jelek, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1892,"ukuran kecil, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV1893,"mantap, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1894,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1895,"kualitas super, not bad. Sangat merekomendasikan.",4,Positif
+REV1896,"pengiriman cepat, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1897,"murah dan bagus, standar. Sangat merekomendasikan.",5,Positif
+REV1898,"pengiriman lambat, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV1899,"kualitas super, mantap. Sangat merekomendasikan.",5,Positif
+REV1900,"buahnya besar, standar. Sangat merekomendasikan.",4,Positif
+REV1901,"banyak yang bonyok, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1902,"buahnya besar, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1903,"seller ramah, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1904,"renyah, sangat manis. Sangat merekomendasikan.",5,Positif
+REV1905,"renyah, mantap. Sangat merekomendasikan.",5,Positif
+REV1906,"pengiriman cepat, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1907,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV1908,"harga mahal, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV1909,"kecewa, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV1910,"Barang standar, pengiriman standar.",3,Netral
+REV1911,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1912,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV1913,"buahnya besar, cukup. Sangat merekomendasikan.",4,Positif
+REV1914,"buahnya besar, kualitas super. Sangat merekomendasikan.",5,Positif
+REV1915,"renyah, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1916,"pengiriman cepat, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV1917,"kurang segar, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV1918,"pengiriman lambat, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV1919,"mantap, renyah. Sangat merekomendasikan.",5,Positif
+REV1920,"packing aman, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1921,"seller ramah, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV1922,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1923,"packing aman, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1924,"murah dan bagus, oke. Sangat merekomendasikan.",4,Positif
+REV1925,"segar sekali, cukup. Sangat merekomendasikan.",5,Positif
+REV1926,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1927,"murah dan bagus, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1928,"kecewa, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV1929,"hancur, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1930,"Barang cukup, pengiriman standar.",3,Netral
+REV1931,"murah dan bagus, standar. Sangat merekomendasikan.",4,Positif
+REV1932,"buahnya besar, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1933,"seller ramah, renyah. Sangat merekomendasikan.",5,Positif
+REV1934,"Barang biasa saja, pengiriman standar.",3,Netral
+REV1935,"hancur, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV1936,"ukuran kecil, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV1937,"Barang cukup, pengiriman standar.",3,Netral
+REV1938,"renyah, cukup. Sangat merekomendasikan.",5,Positif
+REV1939,"kualitas super, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1940,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV1941,"murah dan bagus, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1942,"pengiriman cepat, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV1943,"harga mahal, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV1944,"pengiriman lambat, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV1945,"kualitas super, packing aman. Sangat merekomendasikan.",4,Positif
+REV1946,"packing aman, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV1947,"sangat manis, biasa saja. Sangat merekomendasikan.",4,Positif
+REV1948,"sangat manis, standar. Sangat merekomendasikan.",4,Positif
+REV1949,"buahnya besar, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV1950,"segar sekali, standar. Sangat merekomendasikan.",5,Positif
+REV1951,"kualitas super, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1952,"segar sekali, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1953,"renyah, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1954,"renyah, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1955,"pengiriman lambat, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1956,"murah dan bagus, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1957,"pengiriman cepat, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV1958,"packing aman, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV1959,"sangat manis, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV1960,"Barang lumayan, pengiriman standar.",3,Netral
+REV1961,"murah dan bagus, seller ramah. Sangat merekomendasikan.",5,Positif
+REV1962,"pengiriman cepat, cukup. Sangat merekomendasikan.",5,Positif
+REV1963,"hancur, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV1964,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV1965,"kualitas super, mantap. Sangat merekomendasikan.",4,Positif
+REV1966,"segar sekali, mantap. Sangat merekomendasikan.",4,Positif
+REV1967,"kualitas super, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1968,"segar sekali, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1969,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1970,"Barang cukup, pengiriman standar.",3,Netral
+REV1971,"kualitas super, segar sekali. Sangat merekomendasikan.",5,Positif
+REV1972,"Barang cukup, pengiriman standar.",3,Netral
+REV1973,"mantap, cukup. Sangat merekomendasikan.",4,Positif
+REV1974,"sangat manis, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV1975,"mantap, packing aman. Sangat merekomendasikan.",4,Positif
+REV1976,"pengiriman lambat, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV1977,"kurang segar, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV1978,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV1979,"renyah, packing aman. Sangat merekomendasikan.",5,Positif
+REV1980,"mantap, biasa saja. Sangat merekomendasikan.",5,Positif
+REV1981,"pengiriman cepat, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1982,"buahnya besar, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV1983,"kualitas super, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1984,"buahnya besar, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV1985,"buahnya besar, cukup. Sangat merekomendasikan.",4,Positif
+REV1986,"apel busuk, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV1987,"packing aman, kualitas super. Sangat merekomendasikan.",4,Positif
+REV1988,"seller ramah, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV1989,"murah dan bagus, sangat manis. Sangat merekomendasikan.",4,Positif
+REV1990,"renyah, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV1991,"banyak yang bonyok, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV1992,"kualitas super, not bad. Sangat merekomendasikan.",4,Positif
+REV1993,"renyah, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV1994,"Barang lumayan, pengiriman standar.",3,Netral
+REV1995,"renyah, cukup. Sangat merekomendasikan.",5,Positif
+REV1996,"renyah, renyah. Sangat merekomendasikan.",5,Positif
+REV1997,"harga mahal, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV1998,"pengiriman cepat, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV1999,"kualitas super, oke. Sangat merekomendasikan.",5,Positif
+REV2000,"apel busuk, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV2001,"segar sekali, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2002,"segar sekali, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2003,"renyah, mantap. Sangat merekomendasikan.",5,Positif
+REV2004,"buahnya besar, standar. Sangat merekomendasikan.",4,Positif
+REV2005,"jelek, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV2006,"murah dan bagus, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2007,"segar sekali, mantap. Sangat merekomendasikan.",4,Positif
+REV2008,"renyah, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2009,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2010,"murah dan bagus, segar sekali. Sangat merekomendasikan.",4,Positif
+REV2011,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2012,"seller ramah, standar. Sangat merekomendasikan.",4,Positif
+REV2013,"packing aman, standar. Sangat merekomendasikan.",4,Positif
+REV2014,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2015,"pengiriman cepat, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV2016,"packing aman, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV2017,"buahnya besar, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV2018,"kualitas super, biasa saja. Sangat merekomendasikan.",4,Positif
+REV2019,"kualitas super, biasa saja. Sangat merekomendasikan.",5,Positif
+REV2020,"mantap, renyah. Sangat merekomendasikan.",4,Positif
+REV2021,"Barang not bad, pengiriman standar.",3,Netral
+REV2022,"murah dan bagus, lumayan. Sangat merekomendasikan.",4,Positif
+REV2023,"kualitas super, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV2024,"banyak yang bonyok, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV2025,"murah dan bagus, oke. Sangat merekomendasikan.",5,Positif
+REV2026,"mantap, biasa saja. Sangat merekomendasikan.",5,Positif
+REV2027,"Barang standar, pengiriman standar.",3,Netral
+REV2028,"harga mahal, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV2029,"Barang cukup, pengiriman standar.",3,Netral
+REV2030,"sangat manis, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV2031,"mantap, biasa saja. Sangat merekomendasikan.",5,Positif
+REV2032,"Barang oke, pengiriman standar.",3,Netral
+REV2033,"sangat manis, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV2034,"kurang segar, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV2035,"Barang not bad, pengiriman standar.",3,Netral
+REV2036,"pengiriman lambat, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV2037,"pengiriman cepat, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV2038,"Barang cukup, pengiriman standar.",3,Netral
+REV2039,"sangat manis, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2040,"kualitas super, packing aman. Sangat merekomendasikan.",4,Positif
+REV2041,"banyak yang bonyok, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV2042,"kurang segar, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV2043,"apel busuk, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV2044,"pengiriman lambat, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV2045,"renyah, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV2046,"packing aman, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV2047,"mantap, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV2048,"Barang not bad, pengiriman standar.",3,Netral
+REV2049,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2050,"kurang segar, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV2051,"murah dan bagus, packing aman. Sangat merekomendasikan.",4,Positif
+REV2052,"kualitas super, sangat manis. Sangat merekomendasikan.",5,Positif
+REV2053,"pengiriman cepat, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2054,"Barang not bad, pengiriman standar.",3,Netral
+REV2055,"seller ramah, cukup. Sangat merekomendasikan.",5,Positif
+REV2056,"rasa hambar, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV2057,"murah dan bagus, oke. Sangat merekomendasikan.",4,Positif
+REV2058,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2059,"mantap, mantap. Sangat merekomendasikan.",5,Positif
+REV2060,"harga mahal, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV2061,"kualitas super, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2062,"rasa hambar, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV2063,"pengiriman lambat, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV2064,"kualitas super, lumayan. Sangat merekomendasikan.",4,Positif
+REV2065,"renyah, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV2066,"buahnya besar, cukup. Sangat merekomendasikan.",5,Positif
+REV2067,"murah dan bagus, mantap. Sangat merekomendasikan.",4,Positif
+REV2068,"pengiriman cepat, renyah. Sangat merekomendasikan.",5,Positif
+REV2069,"banyak yang bonyok, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV2070,"segar sekali, segar sekali. Sangat merekomendasikan.",4,Positif
+REV2071,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2072,"pengiriman cepat, packing aman. Sangat merekomendasikan.",5,Positif
+REV2073,"Barang cukup, pengiriman standar.",3,Netral
+REV2074,"Barang lumayan, pengiriman standar.",3,Netral
+REV2075,"renyah, cukup. Sangat merekomendasikan.",4,Positif
+REV2076,"mantap, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV2077,"packing aman, cukup. Sangat merekomendasikan.",5,Positif
+REV2078,"pengiriman lambat, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV2079,"kualitas super, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV2080,"ukuran kecil, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV2081,"packing aman, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV2082,"seller ramah, biasa saja. Sangat merekomendasikan.",4,Positif
+REV2083,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2084,"kualitas super, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV2085,"renyah, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV2086,"packing aman, oke. Sangat merekomendasikan.",5,Positif
+REV2087,"Barang not bad, pengiriman standar.",3,Netral
+REV2088,"renyah, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2089,"buahnya besar, not bad. Sangat merekomendasikan.",5,Positif
+REV2090,"pengiriman cepat, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2091,"kurang segar, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV2092,"Barang lumayan, pengiriman standar.",3,Netral
+REV2093,"kualitas super, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV2094,"pengiriman cepat, mantap. Sangat merekomendasikan.",5,Positif
+REV2095,"pengiriman lambat, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV2096,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2097,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2098,"renyah, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV2099,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV2100,"ukuran kecil, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV2101,"jelek, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV2102,"pengiriman lambat, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV2103,"mantap, cukup. Sangat merekomendasikan.",5,Positif
+REV2104,"kualitas super, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV2105,"Barang standar, pengiriman standar.",3,Netral
+REV2106,"mantap, not bad. Sangat merekomendasikan.",5,Positif
+REV2107,"pengiriman cepat, renyah. Sangat merekomendasikan.",4,Positif
+REV2108,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2109,"hancur, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV2110,"mantap, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2111,"sangat manis, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV2112,"apel busuk, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV2113,"murah dan bagus, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2114,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2115,"kurang segar, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV2116,"sangat manis, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV2117,"buahnya besar, mantap. Sangat merekomendasikan.",5,Positif
+REV2118,"Barang oke, pengiriman standar.",3,Netral
+REV2119,"packing aman, packing aman. Sangat merekomendasikan.",5,Positif
+REV2120,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV2121,"ukuran kecil, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV2122,"kualitas super, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2123,"pengiriman cepat, oke. Sangat merekomendasikan.",4,Positif
+REV2124,"kurang segar, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV2125,"packing aman, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2126,"renyah, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV2127,"pengiriman cepat, lumayan. Sangat merekomendasikan.",4,Positif
+REV2128,"banyak yang bonyok, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV2129,"kurang segar, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV2130,"renyah, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV2131,"buahnya besar, segar sekali. Sangat merekomendasikan.",4,Positif
+REV2132,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2133,"segar sekali, oke. Sangat merekomendasikan.",4,Positif
+REV2134,"rasa hambar, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV2135,"packing aman, packing aman. Sangat merekomendasikan.",4,Positif
+REV2136,"pengiriman lambat, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV2137,"Barang lumayan, pengiriman standar.",3,Netral
+REV2138,"murah dan bagus, standar. Sangat merekomendasikan.",4,Positif
+REV2139,"hancur, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV2140,"segar sekali, renyah. Sangat merekomendasikan.",4,Positif
+REV2141,"banyak yang bonyok, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV2142,"renyah, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2143,"pengiriman cepat, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV2144,"buahnya besar, oke. Sangat merekomendasikan.",4,Positif
+REV2145,"packing aman, mantap. Sangat merekomendasikan.",4,Positif
+REV2146,"packing aman, sangat manis. Sangat merekomendasikan.",4,Positif
+REV2147,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2148,"kurang segar, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV2149,"packing aman, packing aman. Sangat merekomendasikan.",4,Positif
+REV2150,"segar sekali, not bad. Sangat merekomendasikan.",5,Positif
+REV2151,"banyak yang bonyok, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV2152,"sangat manis, mantap. Sangat merekomendasikan.",5,Positif
+REV2153,"packing aman, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV2154,"packing aman, mantap. Sangat merekomendasikan.",5,Positif
+REV2155,"jelek, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV2156,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2157,"seller ramah, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2158,"murah dan bagus, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV2159,"seller ramah, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV2160,"sangat manis, standar. Sangat merekomendasikan.",4,Positif
+REV2161,"apel busuk, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV2162,"buahnya besar, seller ramah. Sangat merekomendasikan.",5,Positif
+REV2163,"renyah, cukup. Sangat merekomendasikan.",4,Positif
+REV2164,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV2165,"seller ramah, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV2166,"harga mahal, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV2167,"murah dan bagus, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV2168,"mantap, segar sekali. Sangat merekomendasikan.",5,Positif
+REV2169,"pengiriman cepat, segar sekali. Sangat merekomendasikan.",5,Positif
+REV2170,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV2171,"renyah, lumayan. Sangat merekomendasikan.",4,Positif
+REV2172,"jelek, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV2173,"pengiriman lambat, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV2174,"hancur, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV2175,"seller ramah, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV2176,"sangat manis, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2177,"apel busuk, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV2178,"renyah, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV2179,"buahnya besar, oke. Sangat merekomendasikan.",5,Positif
+REV2180,"pengiriman cepat, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV2181,"Barang not bad, pengiriman standar.",3,Netral
+REV2182,"pengiriman cepat, lumayan. Sangat merekomendasikan.",4,Positif
+REV2183,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2184,"renyah, renyah. Sangat merekomendasikan.",5,Positif
+REV2185,"kurang segar, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV2186,"murah dan bagus, not bad. Sangat merekomendasikan.",5,Positif
+REV2187,"renyah, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV2188,"buahnya besar, cukup. Sangat merekomendasikan.",5,Positif
+REV2189,"packing aman, not bad. Sangat merekomendasikan.",4,Positif
+REV2190,"murah dan bagus, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2191,"Barang lumayan, pengiriman standar.",3,Netral
+REV2192,"renyah, lumayan. Sangat merekomendasikan.",5,Positif
+REV2193,"kualitas super, biasa saja. Sangat merekomendasikan.",5,Positif
+REV2194,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2195,"ukuran kecil, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV2196,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2197,"packing aman, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV2198,"mantap, not bad. Sangat merekomendasikan.",5,Positif
+REV2199,"segar sekali, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2200,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2201,"harga mahal, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV2202,"buahnya besar, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV2203,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV2204,"Barang standar, pengiriman standar.",3,Netral
+REV2205,"segar sekali, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2206,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2207,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2208,"segar sekali, sangat manis. Sangat merekomendasikan.",4,Positif
+REV2209,"packing aman, lumayan. Sangat merekomendasikan.",4,Positif
+REV2210,"kurang segar, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV2211,"seller ramah, seller ramah. Sangat merekomendasikan.",5,Positif
+REV2212,"seller ramah, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV2213,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2214,"packing aman, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2215,"pengiriman cepat, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV2216,"segar sekali, cukup. Sangat merekomendasikan.",5,Positif
+REV2217,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2218,"packing aman, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV2219,"kurang segar, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV2220,"pengiriman cepat, oke. Sangat merekomendasikan.",5,Positif
+REV2221,"jelek, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV2222,"buahnya besar, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV2223,"ukuran kecil, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV2224,"packing aman, seller ramah. Sangat merekomendasikan.",5,Positif
+REV2225,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2226,"murah dan bagus, cukup. Sangat merekomendasikan.",5,Positif
+REV2227,"murah dan bagus, packing aman. Sangat merekomendasikan.",4,Positif
+REV2228,"murah dan bagus, mantap. Sangat merekomendasikan.",4,Positif
+REV2229,"segar sekali, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2230,"renyah, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV2231,"renyah, cukup. Sangat merekomendasikan.",5,Positif
+REV2232,"murah dan bagus, mantap. Sangat merekomendasikan.",5,Positif
+REV2233,"rasa hambar, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV2234,"Barang not bad, pengiriman standar.",3,Netral
+REV2235,"kurang segar, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV2236,"renyah, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2237,"murah dan bagus, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2238,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV2239,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2240,"packing aman, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV2241,"packing aman, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2242,"segar sekali, cukup. Sangat merekomendasikan.",5,Positif
+REV2243,"murah dan bagus, cukup. Sangat merekomendasikan.",4,Positif
+REV2244,"ukuran kecil, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV2245,"kualitas super, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV2246,"mantap, packing aman. Sangat merekomendasikan.",5,Positif
+REV2247,"kecewa, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV2248,"jelek, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV2249,"segar sekali, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2250,"kualitas super, biasa saja. Sangat merekomendasikan.",4,Positif
+REV2251,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2252,"harga mahal, benar-benar rasa hambar. Tidak akan beli lagi.",1,Negatif
+REV2253,"Barang standar, pengiriman standar.",3,Netral
+REV2254,"Barang lumayan, pengiriman standar.",3,Netral
+REV2255,"buahnya besar, renyah. Sangat merekomendasikan.",4,Positif
+REV2256,"seller ramah, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV2257,"packing aman, seller ramah. Sangat merekomendasikan.",5,Positif
+REV2258,"murah dan bagus, lumayan. Sangat merekomendasikan.",4,Positif
+REV2259,"murah dan bagus, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2260,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2261,"mantap, packing aman. Sangat merekomendasikan.",5,Positif
+REV2262,"buahnya besar, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2263,"pengiriman lambat, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV2264,"pengiriman cepat, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2265,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV2266,"packing aman, renyah. Sangat merekomendasikan.",5,Positif
+REV2267,"ukuran kecil, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV2268,"Barang lumayan, pengiriman standar.",3,Netral
+REV2269,"Barang oke, pengiriman standar.",3,Netral
+REV2270,"mantap, bisa dimakan. Sangat merekomendasikan.",4,Positif
+REV2271,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2272,"renyah, mantap. Sangat merekomendasikan.",5,Positif
+REV2273,"harga mahal, benar-benar jelek. Tidak akan beli lagi.",2,Negatif
+REV2274,"jelek, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV2275,"pengiriman cepat, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV2276,"harga mahal, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV2277,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2278,"kualitas super, lumayan. Sangat merekomendasikan.",4,Positif
+REV2279,"pengiriman cepat, oke. Sangat merekomendasikan.",5,Positif
+REV2280,"Barang oke, pengiriman standar.",3,Netral
+REV2281,"pengiriman cepat, sangat manis. Sangat merekomendasikan.",5,Positif
+REV2282,"renyah, mantap. Sangat merekomendasikan.",4,Positif
+REV2283,"hancur, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV2284,"pengiriman cepat, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV2285,"seller ramah, biasa saja. Sangat merekomendasikan.",4,Positif
+REV2286,"Barang not bad, pengiriman standar.",3,Netral
+REV2287,"banyak yang bonyok, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV2288,"seller ramah, segar sekali. Sangat merekomendasikan.",5,Positif
+REV2289,"pengiriman cepat, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV2290,"Barang cukup, pengiriman standar.",3,Netral
+REV2291,"banyak yang bonyok, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV2292,"sangat manis, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV2293,"seller ramah, packing aman. Sangat merekomendasikan.",5,Positif
+REV2294,"harga mahal, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV2295,"renyah, mantap. Sangat merekomendasikan.",4,Positif
+REV2296,"mantap, not bad. Sangat merekomendasikan.",5,Positif
+REV2297,"Barang lumayan, pengiriman standar.",3,Netral
+REV2298,"ukuran kecil, benar-benar banyak yang bonyok. Tidak akan beli lagi.",2,Negatif
+REV2299,"kecewa, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV2300,"rasa hambar, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV2301,"murah dan bagus, renyah. Sangat merekomendasikan.",5,Positif
+REV2302,"seller ramah, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV2303,"ukuran kecil, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV2304,"murah dan bagus, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV2305,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2306,"kecewa, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV2307,"pengiriman cepat, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2308,"pengiriman lambat, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV2309,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2310,"renyah, biasa saja. Sangat merekomendasikan.",5,Positif
+REV2311,"jelek, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV2312,"buahnya besar, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2313,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2314,"mantap, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV2315,"buahnya besar, oke. Sangat merekomendasikan.",5,Positif
+REV2316,"buahnya besar, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV2317,"kualitas super, not bad. Sangat merekomendasikan.",5,Positif
+REV2318,"kualitas super, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2319,"jelek, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV2320,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2321,"hancur, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV2322,"pengiriman lambat, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV2323,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2324,"Barang not bad, pengiriman standar.",3,Netral
+REV2325,"Barang cukup, pengiriman standar.",3,Netral
+REV2326,"kualitas super, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2327,"mantap, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2328,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2329,"jelek, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV2330,"sangat manis, oke. Sangat merekomendasikan.",5,Positif
+REV2331,"pengiriman cepat, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV2332,"kurang segar, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV2333,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2334,"sangat manis, cukup. Sangat merekomendasikan.",5,Positif
+REV2335,"packing aman, mantap. Sangat merekomendasikan.",4,Positif
+REV2336,"apel busuk, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV2337,"Barang oke, pengiriman standar.",3,Netral
+REV2338,"sangat manis, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2339,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2340,"rasa hambar, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV2341,"kurang segar, benar-benar banyak yang bonyok. Tidak akan beli lagi.",1,Negatif
+REV2342,"kualitas super, cukup. Sangat merekomendasikan.",4,Positif
+REV2343,"sangat manis, pengiriman cepat. Sangat merekomendasikan.",4,Positif
+REV2344,"harga mahal, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV2345,"murah dan bagus, biasa saja. Sangat merekomendasikan.",4,Positif
+REV2346,"pengiriman lambat, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV2347,"seller ramah, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV2348,"seller ramah, oke. Sangat merekomendasikan.",4,Positif
+REV2349,"kurang segar, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV2350,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2351,"buahnya besar, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2352,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2353,"rasa hambar, benar-benar pengiriman lambat. Tidak akan beli lagi.",1,Negatif
+REV2354,"buahnya besar, standar. Sangat merekomendasikan.",5,Positif
+REV2355,"Barang not bad, pengiriman standar.",3,Netral
+REV2356,"pengiriman lambat, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV2357,"sangat manis, sangat manis. Sangat merekomendasikan.",4,Positif
+REV2358,"murah dan bagus, oke. Sangat merekomendasikan.",5,Positif
+REV2359,"buahnya besar, biasa saja. Sangat merekomendasikan.",5,Positif
+REV2360,"Barang not bad, pengiriman standar.",3,Netral
+REV2361,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV2362,"segar sekali, packing aman. Sangat merekomendasikan.",4,Positif
+REV2363,"Barang cukup, pengiriman standar.",3,Netral
+REV2364,"renyah, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV2365,"ukuran kecil, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV2366,"kualitas super, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2367,"seller ramah, bisa dimakan. Sangat merekomendasikan.",5,Positif
+REV2368,"sangat manis, packing aman. Sangat merekomendasikan.",4,Positif
+REV2369,"kecewa, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV2370,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2371,"mantap, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2372,"harga mahal, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV2373,"apel busuk, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV2374,"sangat manis, standar. Sangat merekomendasikan.",5,Positif
+REV2375,"packing aman, packing aman. Sangat merekomendasikan.",4,Positif
+REV2376,"buahnya besar, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2377,"sangat manis, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2378,"buahnya besar, mantap. Sangat merekomendasikan.",4,Positif
+REV2379,"segar sekali, not bad. Sangat merekomendasikan.",5,Positif
+REV2380,"renyah, not bad. Sangat merekomendasikan.",5,Positif
+REV2381,"mantap, lumayan. Sangat merekomendasikan.",5,Positif
+REV2382,"segar sekali, mantap. Sangat merekomendasikan.",5,Positif
+REV2383,"Barang standar, pengiriman standar.",3,Netral
+REV2384,"buahnya besar, packing aman. Sangat merekomendasikan.",5,Positif
+REV2385,"seller ramah, mantap. Sangat merekomendasikan.",4,Positif
+REV2386,"murah dan bagus, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2387,"jelek, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV2388,"pengiriman lambat, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV2389,"buahnya besar, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2390,"sangat manis, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV2391,"seller ramah, sesuai deskripsi. Sangat merekomendasikan.",5,Positif
+REV2392,"renyah, biasa saja. Sangat merekomendasikan.",4,Positif
+REV2393,"seller ramah, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV2394,"murah dan bagus, standar. Sangat merekomendasikan.",4,Positif
+REV2395,"Barang standar, pengiriman standar.",3,Netral
+REV2396,"jelek, benar-benar harga mahal. Tidak akan beli lagi.",1,Negatif
+REV2397,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2398,"kecewa, benar-benar ukuran kecil. Tidak akan beli lagi.",1,Negatif
+REV2399,"pengiriman lambat, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV2400,"apel busuk, benar-benar jelek. Tidak akan beli lagi.",1,Negatif
+REV2401,"kurang segar, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV2402,"Barang not bad, pengiriman standar.",3,Netral
+REV2403,"buahnya besar, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV2404,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV2405,"segar sekali, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV2406,"segar sekali, lumayan. Sangat merekomendasikan.",5,Positif
+REV2407,"kualitas super, oke. Sangat merekomendasikan.",4,Positif
+REV2408,"renyah, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV2409,"buahnya besar, seller ramah. Sangat merekomendasikan.",5,Positif
+REV2410,"sangat manis, buahnya besar. Sangat merekomendasikan.",4,Positif
+REV2411,"kurang segar, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV2412,"mantap, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2413,"kualitas super, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2414,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2415,"buahnya besar, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2416,"packing aman, seller ramah. Sangat merekomendasikan.",5,Positif
+REV2417,"renyah, mantap. Sangat merekomendasikan.",5,Positif
+REV2418,"apel busuk, benar-benar kecewa. Tidak akan beli lagi.",2,Negatif
+REV2419,"kecewa, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV2420,"Barang cukup, pengiriman standar.",3,Netral
+REV2421,"kecewa, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV2422,"kecewa, benar-benar kurang segar. Tidak akan beli lagi.",2,Negatif
+REV2423,"segar sekali, cukup. Sangat merekomendasikan.",5,Positif
+REV2424,"renyah, mantap. Sangat merekomendasikan.",4,Positif
+REV2425,"Barang sesuai deskripsi, pengiriman standar.",3,Netral
+REV2426,"packing aman, cukup. Sangat merekomendasikan.",4,Positif
+REV2427,"renyah, mantap. Sangat merekomendasikan.",5,Positif
+REV2428,"murah dan bagus, sesuai harga. Sangat merekomendasikan.",5,Positif
+REV2429,"buahnya besar, sampai tujuan. Sangat merekomendasikan.",4,Positif
+REV2430,"packing aman, segar sekali. Sangat merekomendasikan.",5,Positif
+REV2431,"packing aman, lumayan. Sangat merekomendasikan.",5,Positif
+REV2432,"segar sekali, sesuai harga. Sangat merekomendasikan.",4,Positif
+REV2433,"renyah, biasa saja. Sangat merekomendasikan.",4,Positif
+REV2434,"sangat manis, not bad. Sangat merekomendasikan.",4,Positif
+REV2435,"segar sekali, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2436,"sangat manis, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV2437,"Barang not bad, pengiriman standar.",3,Netral
+REV2438,"mantap, not bad. Sangat merekomendasikan.",5,Positif
+REV2439,"seller ramah, mantap. Sangat merekomendasikan.",4,Positif
+REV2440,"pengiriman cepat, seller ramah. Sangat merekomendasikan.",4,Positif
+REV2441,"renyah, packing aman. Sangat merekomendasikan.",5,Positif
+REV2442,"kurang segar, benar-benar hancur. Tidak akan beli lagi.",2,Negatif
+REV2443,"segar sekali, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2444,"Barang not bad, pengiriman standar.",3,Netral
+REV2445,"renyah, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV2446,"harga mahal, benar-benar harga mahal. Tidak akan beli lagi.",2,Negatif
+REV2447,"harga mahal, benar-benar pengiriman lambat. Tidak akan beli lagi.",2,Negatif
+REV2448,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2449,"pengiriman cepat, murah dan bagus. Sangat merekomendasikan.",4,Positif
+REV2450,"buahnya besar, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2451,"pengiriman cepat, cukup. Sangat merekomendasikan.",4,Positif
+REV2452,"Barang lumayan, pengiriman standar.",3,Netral
+REV2453,"jelek, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV2454,"kualitas super, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2455,"sangat manis, biasa saja. Sangat merekomendasikan.",5,Positif
+REV2456,"pengiriman cepat, packing aman. Sangat merekomendasikan.",4,Positif
+REV2457,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2458,"pengiriman cepat, sangat manis. Sangat merekomendasikan.",4,Positif
+REV2459,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2460,"buahnya besar, oke. Sangat merekomendasikan.",5,Positif
+REV2461,"banyak yang bonyok, benar-benar apel busuk. Tidak akan beli lagi.",1,Negatif
+REV2462,"hancur, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
+REV2463,"packing aman, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2464,"sangat manis, sangat manis. Sangat merekomendasikan.",5,Positif
+REV2465,"buahnya besar, cukup. Sangat merekomendasikan.",4,Positif
+REV2466,"seller ramah, sangat manis. Sangat merekomendasikan.",5,Positif
+REV2467,"Barang lumayan, pengiriman standar.",3,Netral
+REV2468,"jelek, benar-benar ukuran kecil. Tidak akan beli lagi.",2,Negatif
+REV2469,"Barang not bad, pengiriman standar.",3,Netral
+REV2470,"murah dan bagus, sangat manis. Sangat merekomendasikan.",4,Positif
+REV2471,"buahnya besar, biasa saja. Sangat merekomendasikan.",5,Positif
+REV2472,"pengiriman lambat, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV2473,"Barang sesuai harga, pengiriman standar.",3,Netral
+REV2474,"buahnya besar, murah dan bagus. Sangat merekomendasikan.",5,Positif
+REV2475,"kecewa, benar-benar kecewa. Tidak akan beli lagi.",1,Negatif
+REV2476,"mantap, sesuai deskripsi. Sangat merekomendasikan.",4,Positif
+REV2477,"Barang oke, pengiriman standar.",3,Netral
+REV2478,"renyah, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV2479,"kurang segar, benar-benar rasa hambar. Tidak akan beli lagi.",2,Negatif
+REV2480,"renyah, standar. Sangat merekomendasikan.",5,Positif
+REV2481,"Barang cukup, pengiriman standar.",3,Netral
+REV2482,"Barang bisa dimakan, pengiriman standar.",3,Netral
+REV2483,"Barang biasa saja, pengiriman standar.",3,Netral
+REV2484,"segar sekali, mantap. Sangat merekomendasikan.",4,Positif
+REV2485,"kualitas super, kualitas super. Sangat merekomendasikan.",5,Positif
+REV2486,"rasa hambar, benar-benar kurang segar. Tidak akan beli lagi.",1,Negatif
+REV2487,"seller ramah, standar. Sangat merekomendasikan.",5,Positif
+REV2488,"buahnya besar, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2489,"sangat manis, sangat manis. Sangat merekomendasikan.",5,Positif
+REV2490,"pengiriman cepat, pengiriman cepat. Sangat merekomendasikan.",5,Positif
+REV2491,"packing aman, biasa saja. Sangat merekomendasikan.",4,Positif
+REV2492,"Barang sampai tujuan, pengiriman standar.",3,Netral
+REV2493,"mantap, segar sekali. Sangat merekomendasikan.",4,Positif
+REV2494,"buahnya besar, kualitas super. Sangat merekomendasikan.",4,Positif
+REV2495,"segar sekali, seller ramah. Sangat merekomendasikan.",5,Positif
+REV2496,"mantap, sampai tujuan. Sangat merekomendasikan.",5,Positif
+REV2497,"ukuran kecil, benar-benar apel busuk. Tidak akan beli lagi.",2,Negatif
+REV2498,"kualitas super, buahnya besar. Sangat merekomendasikan.",5,Positif
+REV2499,"jelek, benar-benar hancur. Tidak akan beli lagi.",1,Negatif
