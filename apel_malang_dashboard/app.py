@@ -583,14 +583,21 @@ elif menu == "4. Integrasi Makro (GNN)":
         st.metric("Edge Prediction AUC", metrics['Edge Prediction ROC-AUC'])
         st.metric("Global Graph Loss", metrics['Graph Loss'])
         
-        st.markdown("---")
-        st.subheader("Eigenvector & Degree Centrality")
-        centrality = gnn_model.get_graph_centrality()
-        for node, val in centrality.items():
-            st.progress(val, text=f"Node [{node}]: {val}")
-            
+    # Break out of col2 to use full width for Radar Chart & Progress bars
+    st.markdown("---")
+    st.subheader("Eigenvector & Degree Centrality")
+    col_radar, col_prog = st.columns([1, 1])
+    
+    centrality = gnn_model.get_graph_centrality()
+    
+    with col_radar:
         fig_radar = visualization.plot_centrality_radar(centrality)
         st.plotly_chart(fig_radar, use_container_width=True)
+        
+    with col_prog:
+        st.markdown("<br>", unsafe_allow_html=True) # Add spacing to center vertically
+        for node, val in centrality.items():
+            st.progress(val, text=f"Node [{node}]: {val}")
 
     st.markdown("---")
     st.subheader("Analisis Detail Topologi Jaringan GNN (Kaggle Referensi)")
