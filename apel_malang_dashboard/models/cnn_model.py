@@ -17,82 +17,78 @@ def classify_kualitas_apel(image):
         image = image.convert('RGB')
     np_img = np.array(image)
     
-    # --- 1. CENTER CROP (70% tengah, buang background) ---
-    h, w = np_img.shape[:2]
-    margin_y, margin_x = int(h * 0.15), int(w * 0.15)
-    crop = np_img[margin_y:h-margin_y, margin_x:w-margin_x]
+    # --- 1. SEGMENTASI MASK BUAH ---
+    # Convert to HSV for better color segmentation
+    hsv = cv2.cvtColor(np_img, cv2.COLOR_RGB2HSV)
+    h_ch, s_ch, v_ch = cv2.split(hsv)
     
-    # --- 2. KONVERSI KE HSV ---
-    hsv = cv2.cvtColor(crop, cv2.COLOR_RGB2HSV)
-    h_ch = hsv[:, :, 0]  # Hue
-    s_ch = hsv[:, :, 1]  # Saturation
-    v_ch = hsv[:, :, 2]  # Value (brightness)
-    total = float(h_ch.size)
+    # Simple Otsu threshold on saturation to separate apple from white background
+    _, apple_mask = cv2.threshold(s_ch, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
     
-    # --- 3. SEGMENTASI WARNA ---
+    # Erode mask slightly to ignore boundary edges
+    kernel = np.ones((7,7), np.uint8)
+    apple_mask_eroded = cv2.erode(apple_mask, kernel, iterations=2)
     
-    # Merah sehat (Hue 0-10 atau 160-180, saturasi tinggi, cerah)
-    red_mask1 = (h_ch <= 10) & (s_ch > 50) & (v_ch > 80)
-    red_mask2 = (h_ch >= 160) & (s_ch > 50) & (v_ch > 80)
-    red_ratio = (np.sum(red_mask1) + np.sum(red_mask2)) / total
+    apple_pixels = np.sum(apple_mask_eroded > 0)
+    if apple_pixels == 0:
+        apple_pixels = 1  # Avoid division by zero
+        apple_mask_eroded = apple_mask # fallback
+        
+    apple_bool_mask = (apple_mask_eroded > 0)
     
-    # Hijau sehat (Hue 35-85, saturasi cukup, cerah)
-    green_mask = (h_ch >= 35) & (h_ch <= 85) & (s_ch > 40) & (v_ch > 60)
-    green_ratio = np.sum(green_mask) / total
+    # --- 3. ANALISIS WARNA (HSV) ---
+    # Apel Sehat (Merah atau Hijau/Kuning)
+    red_mask = (((h_ch >= 0) & (h_ch <= 15)) | ((h_ch >= 165) & (h_ch <= 180))) & (s_ch > 40) & (v_ch > 40)
+    green_mask = (h_ch >= 25) & (h_ch <= 85) & (s_ch > 40) & (v_ch > 40)
+    healthy_mask = (red_mask | green_mask) & apple_bool_mask
     
-    # Coklat/busuk (Hue 10-25, saturasi rendah-sedang, gelap)
-    brown_mask = (h_ch >= 10) & (h_ch <= 25) & (s_ch > 30) & (v_ch < 150)
-    brown_ratio = np.sum(brown_mask) / total
+    # Apel Cacat/Busuk (Coklat, Hitam, atau Pucat)
+    brown_mask = (h_ch >= 10) & (h_ch <= 25) & (s_ch > 30) & (v_ch > 20) & (v_ch < 220)
+    dark_mask = (v_ch < 50)
+    bruise_mask = (s_ch < 30) & (v_ch < 200) & (v_ch > 50)  # Pucat/Bercak memar
     
-    # Area sangat gelap (hitam, pembusukan parah)
-    dark_mask = (v_ch < 60)
-    dark_ratio = np.sum(dark_mask) / total
+    healthy_ratio = np.sum(healthy_mask) / apple_pixels
+    brown_ratio = np.sum(brown_mask & apple_bool_mask) / apple_pixels
+    dark_ratio = np.sum(dark_mask & apple_bool_mask) / apple_pixels
+    bruise_ratio = np.sum(bruise_mask & apple_bool_mask) / apple_pixels
     
-    # Area sangat terang / putih (background atau refleksi, diabaikan)
-    bright_mask = (v_ch > 240) & (s_ch < 30)
-    bright_ratio = np.sum(bright_mask) / total
+    defect_ratio = brown_ratio + dark_ratio + bruise_ratio
+
+    # --- 3. ANALISIS TEKSTUR & KONTUR ---
+    gray = cv2.cvtColor(np_img, cv2.COLOR_RGB2GRAY)
     
-    # --- 4. ANALISIS TEKSTUR (Laplacian Variance) ---
-    gray = cv2.cvtColor(crop, cv2.COLOR_RGB2GRAY)
-    laplacian_var = cv2.Laplacian(gray, cv2.CV_64F).var()
+    # Laplacian variance untuk noise ekstrim (misal salt and pepper)
+    laplacian = cv2.Laplacian(gray, cv2.CV_64F)
+    laplacian_var = laplacian.var()
     
-    # Normalize laplacian berdasarkan resolusi (agar threshold konsisten)
-    norm_laplacian = laplacian_var / (max(crop.shape[0], crop.shape[1]) / 224.0)
+    # Standard deviation warna (bercak tidak merata)
+    mean_val, std_val = cv2.meanStdDev(gray, mask=apple_mask_eroded)
+    std_dev = std_val[0][0] if std_val is not None else 0
     
-    # --- 5. HITUNG SKOR PER KELAS ---
-    healthy_color = red_ratio + green_ratio
-    decay_color = brown_ratio + dark_ratio
+    # Canny Edge detection untuk mendeteksi lubang, memar keras, atau guratan
+    edges = cv2.Canny(gray, 80, 160)
+    edges_inside = edges & apple_mask_eroded
+    edge_ratio = np.sum(edges_inside > 0) / apple_pixels
+
+    # --- 5. SCORING SYSTEM ---
+    score_sehat = healthy_ratio * 100
     
-    score_sehat = 0.0
-    score_cacat = 0.0
-    score_busuk = 0.0
+    score_cacat = 0
+    # Penalti tekstur dan edge
+    if laplacian_var > 400: score_cacat += 30
+    if edge_ratio > 0.04: score_cacat += 40
+    if std_dev > 45: score_cacat += 20
+    score_cacat += (bruise_ratio * 150)
+    score_cacat += (defect_ratio * 50)
     
-    # Skor berdasarkan warna
-    score_sehat += healthy_color * 100
-    score_busuk += decay_color * 80
-    score_busuk += dark_ratio * 60  # bonus jika banyak area hitam
+    score_busuk = (brown_ratio * 250) + (dark_ratio * 300) + (defect_ratio * 80)
     
-    # Skor berdasarkan tekstur
-    if norm_laplacian > 800:
-        score_cacat += 30  # Tekstur sangat kasar -> cacat
-    elif norm_laplacian > 400:
-        score_cacat += 15
-    
-    # Penalti cacat: jika warna sehat tinggi tapi ada banyak bintik coklat
-    if healthy_color > 0.2 and brown_ratio > 0.08:
-        score_cacat += 40
-        score_sehat -= 20
-    
-    # Jika mayoritas gambar gelap -> busuk
-    if dark_ratio > 0.40:
-        score_busuk += 60
-    
-    # Jika gambar mayoritas cerah dan berwarna -> sehat
-    if healthy_color > 0.35 and dark_ratio < 0.1:
-        score_sehat += 40
-    
+    # Kalibrasi agar sensitif terhadap cacat (mencegah False Positive "Sehat")
+    if score_cacat > 20 or score_busuk > 20:
+        score_sehat -= max(score_cacat, score_busuk)
+
     # --- 6. TENTUKAN KELAS ---
-    scores = [score_sehat, score_cacat, score_busuk]
+    scores = [max(0, score_sehat), score_cacat, score_busuk]
     max_idx = int(np.argmax(scores))
     
     # Jika semua skor rendah (gambar ambigu), fallback ke analisis brightness
