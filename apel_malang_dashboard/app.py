@@ -498,7 +498,7 @@ elif menu == "2. Kualitas Apel (CNN Vision)":
 
 elif menu == "3. Persepsi Konsumen (NLP)":
     st.header("Analisis Persepsi Konsumen (Arsitektur Transformer)")
-    st.markdown("Model menggunakan 5000 dataset ulasan e-commerce Kaggle Style (`data/teks/ecommerce_apple_reviews.csv`).")
+    st.markdown("Model menggunakan 5000 dataset ulasan e-commerce Kaggle Style (`data/teks/data_ulasan_konsumen.csv`).")
     
     col1, col2 = st.columns([1.2, 1])
     with col1:
@@ -538,7 +538,7 @@ elif menu == "3. Persepsi Konsumen (NLP)":
         st.markdown("</div>", unsafe_allow_html=True)
         
         try:
-            df_reviews = pd.read_csv(os.path.join(BASE_DIR, "..", "data", "teks", "ecommerce_apple_reviews.csv"))
+            df_reviews = pd.read_csv(os.path.join(BASE_DIR, "..", "data", "teks", "data_ulasan_konsumen.csv"))
             sentimen_dist = df_reviews['Sentiment'].value_counts().to_dict()
         except:
             sentimen_dist = nlp_model.get_mock_sentiment_distribution()
@@ -756,18 +756,23 @@ elif menu == "5. Kalkulasi Harga Jual":
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
             p = prompt.lower()
-            if "inflasi" in p or "biaya" in p:
-                response = "Jika inflasi tinggi, biaya logistik dan pupuk akan ikut naik. Sebaiknya Anda fokus pada efisiensi biaya, gunakan pupuk organik lokal, atau simpan sebagian hasil panen (jika ada cold storage) untuk menunggu harga pasar stabil. Menargetkan pasar ekspor juga ide bagus saat nilai tukar Rupiah melemah."
-            elif "pupuk" in p or "perawatan" in p or "saran" in p:
-                response = "Untuk meningkatkan kualitas panen (persentase apel Sehat), gunakan pupuk organik secara berkala dan pastikan pengairan optimal terutama saat curah hujan rendah. Pemangkasan daun juga sangat membantu agar buah apel mendapat sinar matahari cukup sehingga warna merahnya optimal."
-            elif "busuk" in p or "cacat" in p:
-                response = "Apel yang terdeteksi cacat atau busuk jangan langsung dibuang. Anda bisa mengolahnya menjadi produk turunan *added-value* seperti sari apel, keripik apel, atau cuka apel yang memiliki harga jual lebih tinggi dan tahan lama."
-            elif "ekspor" in p or "rupiah" in p or "dolar" in p:
-                response = "Pasar ekspor sangat menguntungkan saat nilai tukar Rupiah (IDR) melemah terhadap USD. Pastikan kualitas apel Anda memenuhi standar 'Sehat' dari deteksi CNN kami, karena pasar ekspor menerapkan standar *grading* visual yang sangat ketat."
-            elif "harga" in p or "jual" in p:
-                response = "Harga jual dipengaruhi oleh kualitas buah, sentimen pasar (NLP), dan faktor makroekonomi (GNN). Cek hasil dari panel Kalkulasi di atas. Jika sentimen sedang negatif, pertimbangkan strategi promo bundling untuk menarik minat konsumen."
+            
+            if any(w in p for w in ["inflasi", "biaya", "uang", "modal", "rugi"]):
+                response = "Terkait keuangan dan biaya, jika inflasi tinggi, biaya logistik dan pupuk akan ikut naik. Fokuslah pada efisiensi biaya, gunakan pupuk organik lokal, atau simpan hasil panen di cold storage jika harga sedang jatuh."
+            elif any(w in p for w in ["pupuk", "perawatan", "tanam", "daun", "hama", "penyakit", "saran"]):
+                response = "Terkait perawatan kebun, untuk meningkatkan kualitas panen, gunakan pupuk organik secara berkala. Pastikan pengairan optimal terutama saat kemarau. Semprot pestisida nabati jika ada hama, dan pangkas daun agar buah apel mendapat cukup sinar matahari."
+            elif any(w in p for w in ["busuk", "cacat", "jelek", "afkir", "rusak"]):
+                response = "Untuk apel yang terdeteksi cacat atau busuk (afkir), jangan dibuang. Olah menjadi produk turunan *added-value* seperti sari apel, keripik apel, atau cuka apel yang harganya jauh lebih stabil di pasaran."
+            elif any(w in p for w in ["ekspor", "rupiah", "dolar", "luar negeri", "kurs"]):
+                response = "Pasar ekspor sangat menguntungkan saat Rupiah melemah terhadap USD. Pastikan kualitas apel Anda memenuhi standar 'Sehat' dari deteksi CNN kita, karena ekspor mensyaratkan *grading* yang sangat ketat."
+            elif any(w in p for w in ["harga", "jual", "pasar", "murah", "mahal", "untung", "profit"]):
+                response = "Harga jual sangat dipengaruhi oleh kualitas buah, sentimen pasar (NLP), dan faktor makro (GNN). Cek hasil dari panel Kalkulasi. Jika sentimen sedang negatif, coba strategi promo bundling untuk menarik minat konsumen."
+            elif any(w in p for w in ["cuaca", "hujan", "panas", "angin", "iklim", "kapan"]):
+                response = "Kondisi cuaca sangat menentukan hasil panen. Berdasarkan model JST kita, suhu rata-rata 20-30°C dan curah hujan moderat adalah kondisi paling ideal untuk apel Malang. Anda bisa mensimulasikannya di menu Prediksi Panen."
+            elif any(w in p for w in ["halo", "hai", "selamat", "bantu", "siapa"]):
+                response = "Halo! Saya adalah AI Asisten Petani Poncokusumo. Anda bisa menanyakan apa saja seputar perawatan kebun apel, strategi harga, cuaca, atau cara menangani apel afkir."
             else:
-                response = f"Sebagai AI Asisten Poncokusumo, saya selalu siap membantu. Terkait pertanyaan Anda tentang '{prompt}', saran terbaik saya adalah pantau terus dashboard ini untuk melihat metrik kualitas (CNN) dan tren pasar (NLP) secara real-time demi mencapai profit maksimal."
+                response = f"Menarik sekali Anda menanyakan soal '{prompt}'. Dalam konteks pertanian apel di Poncokusumo, hal tersebut sangat berkaitan dengan bagaimana kita mengelola sumber daya kebun secara efisien. Saya sarankan Anda untuk mengintegrasikan pengamatan tersebut dengan metrik yang ada di Dashboard ini (seperti tren Cuaca di panel Prediksi atau tren Sentimen Pasar) agar mendapatkan strategi panen yang paling menguntungkan."
                 
             full_response = ""
             for chunk in response.split():

@@ -38,7 +38,7 @@ def generate_reviews():
         })
         
     df = pd.DataFrame(data)
-    df.to_csv('../data/teks/ecommerce_apple_reviews.csv', index=False)
+    df.to_csv('../data/teks/data_ulasan_konsumen.csv', index=False)
     print("Berhasil membuat dataset teks ulasan (5000 baris).")
 
 if __name__ == "__main__":

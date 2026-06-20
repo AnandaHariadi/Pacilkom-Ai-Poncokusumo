@@ -19,7 +19,7 @@ def get_weather_data():
         return _df_weather
         
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    csv_path = os.path.join(base_dir, "weather_classification_data.csv")
+    csv_path = os.path.join(base_dir, "..", "data", "cuaca", "data_cuaca_panen.csv")
     if not os.path.exists(csv_path):
         return pd.DataFrame() # Return empty if not found
         
