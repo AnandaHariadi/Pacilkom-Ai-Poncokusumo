@@ -288,6 +288,16 @@ menu = st.sidebar.radio(
 st.sidebar.markdown("---")
 st.sidebar.info("Dashboard Inovasi Pertanian Cerdas Poncokusumo")
 
+st.sidebar.markdown("---")
+st.sidebar.markdown("#### 🔑 Konfigurasi AI")
+gemini_api_key = st.sidebar.text_input("Google Gemini API Key", type="password", placeholder="Paste API Key untuk Chatbot", help="Digunakan untuk Kalkulasi Harga Jual AI Assistant")
+if gemini_api_key:
+    try:
+        import google.generativeai as genai
+        genai.configure(api_key=gemini_api_key)
+    except ImportError:
+        st.sidebar.error("Package google-generativeai belum terinstall.")
+
 # Header
 st.title("Sistem Analisis Multi-Modal AI")
 st.markdown("### Ekstraksi Prediksi, Kualitas, dan Sentimen Komoditas Apel Malang")
@@ -757,27 +767,41 @@ elif menu == "5. Kalkulasi Harga Jual":
             message_placeholder = st.empty()
             p = prompt.lower()
             
-            if any(w in p for w in ["inflasi", "biaya", "uang", "modal", "rugi"]):
-                response = "Terkait keuangan dan biaya, jika inflasi tinggi, biaya logistik dan pupuk akan ikut naik. Fokuslah pada efisiensi biaya, gunakan pupuk organik lokal, atau simpan hasil panen di cold storage jika harga sedang jatuh."
-            elif any(w in p for w in ["pupuk", "perawatan", "tanam", "daun", "hama", "penyakit", "saran"]):
-                response = "Terkait perawatan kebun, untuk meningkatkan kualitas panen, gunakan pupuk organik secara berkala. Pastikan pengairan optimal terutama saat kemarau. Semprot pestisida nabati jika ada hama, dan pangkas daun agar buah apel mendapat cukup sinar matahari."
-            elif any(w in p for w in ["busuk", "cacat", "jelek", "afkir", "rusak"]):
-                response = "Untuk apel yang terdeteksi cacat atau busuk (afkir), jangan dibuang. Olah menjadi produk turunan *added-value* seperti sari apel, keripik apel, atau cuka apel yang harganya jauh lebih stabil di pasaran."
-            elif any(w in p for w in ["ekspor", "rupiah", "dolar", "luar negeri", "kurs"]):
-                response = "Pasar ekspor sangat menguntungkan saat Rupiah melemah terhadap USD. Pastikan kualitas apel Anda memenuhi standar 'Sehat' dari deteksi CNN kita, karena ekspor mensyaratkan *grading* yang sangat ketat."
-            elif any(w in p for w in ["harga", "jual", "pasar", "murah", "mahal", "untung", "profit"]):
-                response = "Harga jual sangat dipengaruhi oleh kualitas buah, sentimen pasar (NLP), dan faktor makro (GNN). Cek hasil dari panel Kalkulasi. Jika sentimen sedang negatif, coba strategi promo bundling untuk menarik minat konsumen."
-            elif any(w in p for w in ["cuaca", "hujan", "panas", "angin", "iklim", "kapan"]):
-                response = "Kondisi cuaca sangat menentukan hasil panen. Berdasarkan model JST kita, suhu rata-rata 20-30°C dan curah hujan moderat adalah kondisi paling ideal untuk apel Malang. Anda bisa mensimulasikannya di menu Prediksi Panen."
-            elif any(w in p for w in ["halo", "hai", "selamat", "bantu", "siapa"]):
-                response = "Halo! Saya adalah AI Asisten Petani Poncokusumo. Anda bisa menanyakan apa saja seputar perawatan kebun apel, strategi harga, cuaca, atau cara menangani apel afkir."
-            else:
-                response = f"Menarik sekali Anda menanyakan soal '{prompt}'. Dalam konteks pertanian apel di Poncokusumo, hal tersebut sangat berkaitan dengan bagaimana kita mengelola sumber daya kebun secara efisien. Saya sarankan Anda untuk mengintegrasikan pengamatan tersebut dengan metrik yang ada di Dashboard ini (seperti tren Cuaca di panel Prediksi atau tren Sentimen Pasar) agar mendapatkan strategi panen yang paling menguntungkan."
+            response = ""
+            if gemini_api_key:
+                try:
+                    import google.generativeai as genai
+                    model = genai.GenerativeModel("gemini-1.5-flash")
+                    ai_prompt = f"Anda adalah konsultan ahli agribisnis dan Asisten AI Petani Apel di Poncokusumo, Malang. Anda memahami cuaca, penyakit apel (sehat, cacat, busuk), makroekonomi (inflasi, kurs Rupiah), dan NLP sentimen pasar. Jawab pertanyaan petani berikut dengan ramah, profesional, praktis, dan bahasa Indonesia yang mudah dipahami: {prompt}"
+                    
+                    response_obj = model.generate_content(ai_prompt)
+                    response = response_obj.text
+                except Exception as e:
+                    response = f"⚠️ Maaf, terjadi kendala dengan koneksi Gemini API ({str(e)}). Menggunakan mode fallback:\n\n"
+                    gemini_api_key = False # Fallthrough to fallback
+                    
+            if not gemini_api_key:
+                if any(w in p for w in ["inflasi", "biaya", "uang", "modal", "rugi"]):
+                    response += "Terkait keuangan dan biaya, jika inflasi tinggi, biaya logistik dan pupuk akan ikut naik. Fokuslah pada efisiensi biaya, gunakan pupuk organik lokal, atau simpan hasil panen di cold storage jika harga sedang jatuh."
+                elif any(w in p for w in ["pupuk", "perawatan", "tanam", "daun", "hama", "penyakit", "saran"]):
+                    response += "Terkait perawatan kebun, untuk meningkatkan kualitas panen, gunakan pupuk organik secara berkala. Pastikan pengairan optimal terutama saat kemarau. Semprot pestisida nabati jika ada hama, dan pangkas daun agar buah apel mendapat cukup sinar matahari."
+                elif any(w in p for w in ["busuk", "cacat", "jelek", "afkir", "rusak"]):
+                    response += "Untuk apel yang terdeteksi cacat atau busuk (afkir), jangan dibuang. Olah menjadi produk turunan *added-value* seperti sari apel, keripik apel, atau cuka apel yang harganya jauh lebih stabil di pasaran."
+                elif any(w in p for w in ["ekspor", "rupiah", "dolar", "luar negeri", "kurs"]):
+                    response += "Pasar ekspor sangat menguntungkan saat Rupiah melemah terhadap USD. Pastikan kualitas apel Anda memenuhi standar 'Sehat' dari deteksi CNN kita, karena ekspor mensyaratkan *grading* yang sangat ketat."
+                elif any(w in p for w in ["harga", "jual", "pasar", "murah", "mahal", "untung", "profit"]):
+                    response += "Harga jual sangat dipengaruhi oleh kualitas buah, sentimen pasar (NLP), dan faktor makro (GNN). Cek hasil dari panel Kalkulasi. Jika sentimen sedang negatif, coba strategi promo bundling untuk menarik minat konsumen."
+                elif any(w in p for w in ["cuaca", "hujan", "panas", "angin", "iklim", "kapan"]):
+                    response += "Kondisi cuaca sangat menentukan hasil panen. Berdasarkan model JST kita, suhu rata-rata 20-30°C dan curah hujan moderat adalah kondisi paling ideal untuk apel Malang. Anda bisa mensimulasikannya di menu Prediksi Panen."
+                elif any(w in p for w in ["halo", "hai", "selamat", "bantu", "siapa"]):
+                    response += "Halo! Saya adalah AI Asisten Petani Poncokusumo. Anda bisa menanyakan apa saja seputar perawatan kebun apel, strategi harga, cuaca, atau cara menangani apel afkir."
+                else:
+                    response += f"Menarik sekali Anda menanyakan soal '{prompt}'. Dalam konteks pertanian apel di Poncokusumo, hal tersebut sangat berkaitan dengan bagaimana kita mengelola sumber daya kebun secara efisien. Saya sarankan Anda untuk mengintegrasikan pengamatan tersebut dengan metrik yang ada di Dashboard ini (seperti tren Cuaca di panel Prediksi atau tren Sentimen Pasar) agar mendapatkan strategi panen yang paling menguntungkan."
                 
             full_response = ""
-            for chunk in response.split():
+            for chunk in response.split(" "):
                 full_response += chunk + " "
-                time.sleep(0.05)
+                time.sleep(0.02)
                 message_placeholder.markdown(full_response + "▌")
             message_placeholder.markdown(full_response)
         st.session_state.messages.append({"role": "assistant", "content": full_response})
