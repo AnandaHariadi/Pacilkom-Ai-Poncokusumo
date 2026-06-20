@@ -343,7 +343,7 @@ if menu == "1. Prediksi Panen (MLP / RF)":
         
         with tab1:
             st.markdown("Pemetaan historis antara nilai prediksi agregat model dibandingkan hasil simulasi panen nyata. Pita transparansi menunjukkan level kepercayaan 95% (*Confidence Interval*).")
-            waktu, aktual, pred_hist = jst_model.get_historical_predictions()
+            waktu, aktual, pred_hist = jst_model.get_historical_predictions(suhu, kelembapan, kecepatan_angin, curah_hujan, uv_index)
             fig_panen = visualization.plot_prediksi_panen(aktual, pred_hist, waktu)
             st.plotly_chart(fig_panen, use_container_width=True)
             
@@ -378,7 +378,7 @@ if menu == "1. Prediksi Panen (MLP / RF)":
                 
         with tab4:
             st.markdown("Pemeriksaan homoskedastisitas menggunakan plot Residual Error untuk memvalidasi tingkat bias model.")
-            waktu_res, aktual_res, pred_hist_res = jst_model.get_historical_predictions()
+            waktu_res, aktual_res, pred_hist_res = jst_model.get_historical_predictions(suhu, kelembapan, kecepatan_angin, curah_hujan, uv_index)
             if hasattr(visualization, 'plot_residual_analysis'):
                 fig_res = visualization.plot_residual_analysis(aktual_res, pred_hist_res)
                 st.plotly_chart(fig_res, use_container_width=True)
@@ -534,7 +534,8 @@ elif menu == "3. Persepsi Konsumen (NLP)":
             with c2:
                 ngrams = nlp_model.extract_ngrams(ulasan, n=2)
                 if ngrams:
-                    st.info(f"**Frasa Utama:** {', '.join([n[0] for n in ngrams[:1]])}")
+                    ngrams_sorted = sorted(ngrams.items(), key=lambda x: x[1], reverse=True)
+                    st.info(f"**Frasa Utama:** {', '.join([n[0] for n in ngrams_sorted[:3]])}")
                 
             st.markdown("**Pemetaan LIME (Interpretability):**")
             st.markdown(lime_explain.get_lime_explanation(ulasan), unsafe_allow_html=True)

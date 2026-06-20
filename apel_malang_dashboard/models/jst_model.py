@@ -97,22 +97,26 @@ def predict_panen_jst(suhu, kelembapan, kecepatan_angin, curah_hujan, uv_index):
     prediksi = model.predict(input_df)[0]
     return round(prediksi, 2)
 
-def get_historical_predictions():
-    """Return historical mock prediction for trend line."""
-    df = get_weather_data()
-    if df.empty:
-        waktu = [f'Bulan {i}' for i in range(1, 13)]
-        aktual = [50 + np.random.normal(0, 5) for _ in range(12)]
-        prediksi = [a + np.random.normal(0, 2) for a in aktual]
-        return waktu, aktual, prediksi
-        
-    # Sample 20 sequential points to represent a trend
-    df_sample = df.sample(20, random_state=42).reset_index(drop=True)
-    waktu = [f'Observasi {i}' for i in range(1, 21)]
-    aktual = df_sample['Hasil_Panen'].tolist()
-    
+def get_historical_predictions(suhu=25.0, kelembapan=75.0, kecepatan_angin=10.0, curah_hujan=60.0, uv_index=5):
+    """Return historical mock prediction for trend line centered around user inputs."""
     model, features, _ = train_or_get_model()
+    
+    # Generate 30 days of data centered around the input values
+    waktu = [f'Hari {i}' for i in range(1, 31)]
+    
+    data = {
+        'Suhu': np.clip([np.random.normal(suhu, 2.0) for _ in range(30)], 10, 40),
+        'Kelembapan': np.clip([np.random.normal(kelembapan, 5.0) for _ in range(30)], 0, 100),
+        'Angin': np.clip([np.random.normal(kecepatan_angin, 2.0) for _ in range(30)], 0, 50),
+        'Hujan': np.clip([np.random.normal(curah_hujan, 10.0) for _ in range(30)], 0, 100),
+        'UV': np.clip([np.random.normal(uv_index, 1.0) for _ in range(30)], 0, 15),
+    }
+    df_sample = pd.DataFrame(data)
+    
     pred_values = model.predict(df_sample[features])
     prediksi = pred_values.tolist()
+    
+    # Simulate actual values as prediction + some noise
+    aktual = [p + np.random.normal(0, 3) for p in prediksi]
     
     return waktu, aktual, prediksi
