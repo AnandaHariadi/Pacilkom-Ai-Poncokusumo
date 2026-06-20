@@ -435,6 +435,8 @@ elif menu == "2. Kualitas Apel (CNN Vision)":
                 # Mock bounding box creation
                 st.markdown("<div class='scanning-box'>", unsafe_allow_html=True)
                 # We draw a green/red box depending on label
+                if image.mode != 'RGB':
+                    image = image.convert('RGB')
                 draw = ImageDraw.Draw(image)
                 color = "green" if label == "Sehat" else ("red" if label == "Busuk" else "orange")
                 w, h = image.size
