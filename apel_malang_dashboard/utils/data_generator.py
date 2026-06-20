@@ -4,7 +4,7 @@ import random
 import os
 
 def generate_reviews():
-    """Menghasilkan 1500 baris data ulasan e-commerce gaya Kaggle."""
+    """Menghasilkan 5000 baris data ulasan e-commerce gaya Kaggle."""
     os.makedirs('../data/teks', exist_ok=True)
     
     np.random.seed(42)
@@ -15,7 +15,7 @@ def generate_reviews():
     neutral_phrases = ["lumayan", "sesuai harga", "standar", "biasa saja", "oke", "sampai tujuan", "sesuai deskripsi", "cukup", "not bad", "bisa dimakan"]
     
     data = []
-    for i in range(1500):
+    for i in range(5000):
         sentiment_type = np.random.choice(['Positif', 'Negatif', 'Netral'], p=[0.6, 0.2, 0.2])
         
         if sentiment_type == 'Positif':
@@ -39,7 +39,7 @@ def generate_reviews():
         
     df = pd.DataFrame(data)
     df.to_csv('../data/teks/ecommerce_apple_reviews.csv', index=False)
-    print("Berhasil membuat dataset teks ulasan (1500 baris).")
+    print("Berhasil membuat dataset teks ulasan (5000 baris).")
 
 if __name__ == "__main__":
     generate_reviews()
