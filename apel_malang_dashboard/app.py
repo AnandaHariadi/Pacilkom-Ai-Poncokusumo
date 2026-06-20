@@ -755,6 +755,8 @@ elif menu == "5. Kalkulasi Harga Jual":
     
     if "messages" not in st.session_state:
         st.session_state.messages = []
+    if "msg_count" not in st.session_state:
+        st.msg_count = 0
         
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
@@ -762,6 +764,7 @@ elif menu == "5. Kalkulasi Harga Jual":
             
     if prompt := st.chat_input("Tanya AI (misal: 'Bagaimana cara menaikkan margin jika inflasi tinggi?'):"):
         st.session_state.messages.append({"role": "user", "content": prompt})
+        msg_idx = len(st.session_state.messages)
         with st.chat_message("user"):
             st.markdown(prompt)
             
@@ -774,70 +777,319 @@ elif menu == "5. Kalkulasi Harga Jual":
                 try:
                     import google.generativeai as genai
                     model = genai.GenerativeModel("gemini-1.5-flash")
-                    ai_prompt = f"Anda adalah konsultan ahli agribisnis dan Asisten AI Petani Apel di Poncokusumo, Malang. Anda memahami cuaca, penyakit apel (sehat, cacat, busuk), makroekonomi (inflasi, kurs Rupiah), dan NLP sentimen pasar. Jawab pertanyaan petani berikut dengan format Markdown yang sangat rapi (gunakan bold, bullet points, dan paragraf yang terstruktur) layaknya AI Chatbot canggih, agar terlihat profesional, solutif, dan mendalam: {prompt}"
+                    
+                    # Build conversation history for context
+                    history_text = ""
+                    for msg in st.session_state.messages[-6:]:
+                        role = "Petani" if msg["role"] == "user" else "Asisten"
+                        history_text += f"{role}: {msg['content']}\n"
+                    
+                    ai_prompt = (
+                        "Anda adalah konsultan ahli agribisnis dan Asisten AI Petani Apel di Poncokusumo, Malang. "
+                        "Anda memahami cuaca, penyakit apel (sehat, cacat, busuk), makroekonomi (inflasi, kurs Rupiah), "
+                        "sentimen pasar, teknik bertani, pupuk, hama, irigasi, dan semua aspek agribisnis apel. "
+                        "Jawab dengan format Markdown yang rapi (bold, bullet points, paragraf terstruktur). "
+                        "PENTING: Berikan jawaban yang BERBEDA setiap kali, jangan mengulang jawaban sebelumnya. "
+                        "Sesuaikan jawaban dengan konteks percakapan.\n\n"
+                        f"Riwayat Percakapan:\n{history_text}\n"
+                        f"Pertanyaan terbaru: {prompt}"
+                    )
                     
                     response_obj = model.generate_content(ai_prompt)
                     response = response_obj.text
                 except Exception as e:
-                    response = f"⚠️ Maaf, terjadi kendala dengan koneksi Gemini API ({str(e)}). Menggunakan mode fallback:\n\n"
-                    gemini_api_key = False # Fallthrough to fallback
+                    response = f"⚠️ Terjadi kendala koneksi Gemini API ({str(e)}). Menggunakan mode offline:\n\n"
+                    gemini_api_key = False
                     
             if not gemini_api_key:
-                if any(w in p for w in ["inflasi", "biaya", "uang", "modal", "rugi"]):
-                    response += "Halo! Berdasarkan analisis makroekonomi saat ini, ini strategi terbaik untuk menghadapi **lonjakan biaya dan inflasi**:\n\n" \
-                                "1. **Efisiensi Logistik:** Kurangi frekuensi distribusi dengan memaksimalkan kapasitas angkut per perjalanan.\n" \
-                                "2. **Pupuk Alternatif:** Mengingat harga pupuk impor naik akibat inflasi, beralihlah ke pupuk organik lokal atau kompos mandiri untuk menekan Harga Pokok Produksi (HPP).\n" \
-                                "3. **Manajemen Penyimpanan:** Jika harga pasar sedang jatuh akibat daya beli menurun, manfaatkan *cold storage* untuk menunda penjualan hingga harga stabil.\n\n" \
-                                "💡 *Saran pro:* Cek tab **Kalkulasi Harga Jual** di atas untuk memantau titik impas (*break-even point*) Anda secara *real-time*."
-                elif any(w in p for w in ["pupuk", "perawatan", "tanam", "daun", "hama", "penyakit", "saran"]):
-                    response += "Tentu, mari kita bahas **Strategi Perawatan & Pemupukan Optimal** untuk apel Poncokusumo:\n\n" \
-                                "1. **Pemupukan Berimbang:** Gunakan pupuk NPK pada fase vegetatif, dan tingkatkan Kalium saat pembuahan agar apel lebih manis dan warnanya merah cerah.\n" \
-                                "2. **Manajemen Kanopi (Pemangkasan):** Pangkas daun tua secara rutin. Ini memastikan sinar matahari masuk ke sela-sela buah untuk pigmentasi maksimal, sehingga lolos deteksi 'Sehat' pada mesin pemindai CNN.\n" \
-                                "3. **Pengendalian Hama (IPM):** Semprotkan pestisida nabati (seperti ekstrak mimba) secara preventif, terutama saat kelembapan tinggi yang memicu jamur *Marssonina coronaria*.\n\n" \
-                                "*Semoga panen Anda melimpah!*"
-                elif any(w in p for w in ["busuk", "cacat", "jelek", "afkir", "rusak"]):
-                    response += "Jangan khawatir, apel afkir (cacat/busuk) **bukan berarti kerugian total**. Berikut strategi *Added-Value* yang bisa Anda terapkan:\n\n" \
-                                "🍎 **Apel Cacat Fisik / Gores:**\n" \
-                                "- Olah menjadi **Keripik Apel** atau **Sari Apel** kemasan. Margin keuntungannya bisa lebih tinggi daripada menjual apel segar.\n" \
-                                "🍏 **Apel Terlalu Matang / Hampir Busuk:**\n" \
-                                "- Fermentasikan menjadi **Cuka Apel (*Apple Cider Vinegar*)**. Pasar kesehatan sangat meminati produk ini dengan harga premium.\n\n" \
-                                "*Ingat:* Sistem CNN kita di atas sudah diprogram untuk menyortir buah secara otomatis. Pastikan hanya apel Sehat yang masuk ke pasar segar."
-                elif any(w in p for w in ["ekspor", "rupiah", "dolar", "luar negeri", "kurs"]):
-                    response += "Pertanyaan yang sangat strategis! **Kondisi nilai tukar Rupiah (IDR) saat ini** memberikan peluang emas untuk ekspor:\n\n" \
-                                "- **Insentif Valas:** Saat Rupiah melemah terhadap USD, margin keuntungan dari penjualan ekspor (dalam dolar) akan berlipat ganda saat dikonversi ke Rupiah.\n" \
-                                "- **Syarat Mutlak Ekspor:** Pasar global sangat ketat terhadap *visual grading*. Gunakan modul **Deteksi Kualitas CNN** kita untuk memastikan 100% buah yang diekspor masuk kategori 'Sehat' (tanpa bintik/cacat).\n\n" \
-                                "Silakan cek grafik *Sensitivitas Pelemahan Rupiah* di panel kalkulasi untuk melihat simulasi lonjakan profit Anda."
-                elif any(w in p for w in ["harga", "jual", "pasar", "murah", "mahal", "untung", "profit"]):
-                    response += "Untuk mengoptimalkan **Harga Jual dan Profit**, kita harus mengandalkan data, bukan sekadar insting:\n\n" \
-                                "1. **Analisis Sentimen (NLP):** Jika modul persepsi konsumen menunjukkan sentimen 'Negatif' (misal daya beli masyarakat turun), hindari mematok harga premium. Gunakan strategi promo *bundling*.\n" \
-                                "2. **Dynamic Pricing (GNN):** Harga dasar produksi kita hitung dengan graf, lalu ditambahkan dengan volatilitas inflasi. Selalu patuhi batas bawah (*floor price*) yang disarankan di panel.\n\n" \
-                                "Gunakan fitur **Jalankan Matriks Optimasi Harga Kompleks** di menu atas untuk mendapatkan harga paling ideal hari ini."
-                elif any(w in p for w in ["cuaca", "hujan", "panas", "angin", "iklim", "kapan"]):
-                    response += "Berdasarkan **Analisis Prediktif Iklim (JST / Random Forest)**, iklim sangat memengaruhi tonase panen Anda:\n\n" \
-                                "- **Suhu Ideal:** 20-30°C. Jika terlalu panas, apel bisa mengalami *sunburn*.\n" \
-                                "- **Curah Hujan Moderat:** Sangat penting untuk pembesaran buah, tetapi curah hujan berlebih di masa panen dapat menurunkan tingkat kemanisan (*Brix*).\n\n" \
-                                "💡 *Saran AI:* Gunakan menu **Prediksi Panen (MLP/RF)** di sisi kiri, masukkan data cuaca hari ini, dan sistem akan mengestimasi sisa panen Anda secara presisi (Ton/Hektar)."
-                elif any(w in p for w in ["halo", "hai", "selamat", "bantu", "siapa"]):
-                    response += "Halo! 👋 Saya adalah **Asisten AI Eksekutif Poncokusumo**.\n\n" \
-                                "Saya dilengkapi dengan kecerdasan komputasi canggih untuk membantu Anda mengelola kebun apel. Anda bisa bertanya secara rinci tentang:\n" \
-                                "- 📈 Strategi Harga Jual & Potensi Ekspor\n" \
-                                "- 🍎 Cara Menangani Apel Busuk / Cacat\n" \
-                                "- 🌦️ Dampak Cuaca & Perawatan Kebun\n" \
-                                "- 💰 Mitigasi Inflasi & Modal Ekonomi\n\n" \
-                                "Ketikkan pertanyaan Anda, dan saya akan menganalisisnya berdasarkan basis data terpadu agribisnis kita!"
+                # Variasi jawaban per kategori berdasarkan msg_idx agar tidak monoton
+                v = msg_idx % 3
+                
+                if any(w in p for w in ["inflasi", "biaya", "uang", "modal", "rugi", "mahal", "ongkos", "pengeluaran", "investasi", "tabungan", "kredit", "pinjaman", "bank"]):
+                    responses = [
+                        "Berdasarkan analisis makroekonomi terkini, berikut **strategi menghadapi lonjakan biaya**:\n\n"
+                        "1. **Efisiensi Logistik:** Kurangi frekuensi distribusi dengan memaksimalkan kapasitas angkut per perjalanan.\n"
+                        "2. **Pupuk Alternatif:** Beralihlah ke pupuk organik lokal atau kompos mandiri untuk menekan HPP.\n"
+                        "3. **Manajemen Penyimpanan:** Manfaatkan *cold storage* untuk menunda penjualan saat harga jatuh.\n\n"
+                        "💡 *Saran:* Cek tab **Kalkulasi Harga Jual** untuk memantau titik impas (*break-even point*) secara *real-time*.",
+                        
+                        "Pertanyaan penting! Berikut **analisis finansial** yang bisa Anda terapkan:\n\n"
+                        "**Strategi Jangka Pendek:**\n"
+                        "- Negosiasikan kontrak distribusi langsung dengan pembeli besar (*B2B*) untuk memotong biaya perantara.\n"
+                        "- Gunakan pupuk organik fermentasi mandiri (dari limbah panen sebelumnya) sebagai pengganti pupuk impor.\n\n"
+                        "**Strategi Jangka Panjang:**\n"
+                        "- Pertimbangkan kemitraan dengan koperasi petani untuk mendapatkan harga input (*bulk purchasing*) yang lebih murah.\n"
+                        "- Diversifikasi produk olahan apel agar pendapatan tidak bergantung pada harga segar saja.\n\n"
+                        "📊 *Gunakan panel Kalkulasi di atas untuk mensimulasikan skenario biaya Anda.*",
+                        
+                        "Saya memahami kekhawatiran Anda. Mari kita **breakdown** solusinya:\n\n"
+                        "| Komponen Biaya | Strategi Mitigasi |\n"
+                        "|---|---|\n"
+                        "| Pupuk & Pestisida | Beralih ke organik lokal, kompos mandiri |\n"
+                        "| Transportasi | Optimalkan muatan, pilih rute efisien |\n"
+                        "| Tenaga Kerja | Jadwal kerja musiman, gotong-royong |\n"
+                        "| Penyimpanan | Cold storage komunal bersama koperasi |\n\n"
+                        "💡 *Tips:* Pantau indeks inflasi dan nilai tukar Rupiah di panel **Integrasi Makro (GNN)** kami."
+                    ]
+                    response += responses[v]
+                    
+                elif any(w in p for w in ["pupuk", "perawatan", "tanam", "daun", "hama", "penyakit", "saran", "tumbuh", "pohon", "akar", "batang", "bunga", "buah", "panen", "bibit", "varietas", "siram", "air", "irigasi", "gulma", "jamur", "virus", "bakteri", "organik", "kimia", "pestisida", "fungisida", "insektisida"]):
+                    responses = [
+                        "Tentu! Berikut **Panduan Perawatan Optimal** apel Poncokusumo:\n\n"
+                        "🌱 **Fase Vegetatif (Pertumbuhan):**\n"
+                        "- Gunakan pupuk NPK dengan rasio **15-15-15** setiap 2 bulan.\n"
+                        "- Pastikan drainase baik agar akar tidak tergenang.\n\n"
+                        "🌸 **Fase Generatif (Pembungaan & Pembuahan):**\n"
+                        "- Tingkatkan dosis **Kalium (K)** agar buah lebih manis dan warna merah merata.\n"
+                        "- Lakukan pemangkasan daun tua untuk memaksimalkan sinar matahari ke buah.\n\n"
+                        "🛡️ **Pengendalian Hama Terpadu (IPM):**\n"
+                        "- Semprotkan pestisida nabati (ekstrak mimba/neem) saat kelembapan > 80%.\n"
+                        "- Waspadai jamur *Marssonina coronaria* di musim hujan.\n\n"
+                        "*Semoga panen Anda melimpah!* 🍎",
+                        
+                        "Baik, mari kita bahas secara mendetail:\n\n"
+                        "**📋 Jadwal Perawatan Bulanan Apel Malang:**\n\n"
+                        "| Bulan | Aktivitas Utama |\n"
+                        "|---|---|\n"
+                        "| Jan-Feb | Pemangkasan cabang, persiapan lahan |\n"
+                        "| Mar-Apr | Pemupukan dasar NPK + Organik |\n"
+                        "| Mei-Jun | Penjarangan buah, penyemprotan fungisida |\n"
+                        "| Jul-Ags | Pemupukan Kalium, monitoring hama |\n"
+                        "| Sep-Okt | Masa panen utama, sortir kualitas |\n"
+                        "| Nov-Des | Istirahat lahan, pembersihan kebun |\n\n"
+                        "💡 *Tips pro:* Pastikan hasil sortir menggunakan modul **Deteksi CNN** kita agar kualitas ekspor terjamin.",
+                        
+                        "Setiap fase pertumbuhan apel butuh **penanganan berbeda**. Ini detailnya:\n\n"
+                        "1. **Persiapan Tanah:** pH ideal 5.5–6.8. Tambahkan kapur dolomit jika terlalu asam.\n"
+                        "2. **Pemupukan:** Kombinasikan pupuk organik (kompos) dengan anorganik (NPK). Jangan berlebihan — overdosis Nitrogen membuat buah mudah busuk.\n"
+                        "3. **Pengendalian Gulma:** Bersihkan gulma radius 1 meter dari batang utama agar nutrisi tidak tercuri.\n"
+                        "4. **Irigasi:** Gunakan drip irrigation untuk efisiensi air. Apel butuh ±800mm curah hujan/tahun.\n\n"
+                        "🔍 *Gunakan panel Prediksi Panen untuk mengecek apakah kondisi cuaca saat ini mendukung pertumbuhan optimal.*"
+                    ]
+                    response += responses[v]
+                    
+                elif any(w in p for w in ["busuk", "cacat", "jelek", "afkir", "rusak", "bonyok", "lecet", "memar", "hitam", "coklat", "bintik", "bolong", "ulat", "belatung"]):
+                    responses = [
+                        "Jangan khawatir! Apel afkir **bukan kerugian total**. Berikut strategi *Added-Value*:\n\n"
+                        "🍎 **Apel Cacat Fisik / Gores:**\n"
+                        "- Olah menjadi **Keripik Apel** atau **Sari Apel** kemasan premium.\n"
+                        "- Margin keuntungan keripik bisa **2-3x lipat** dibanding apel segar!\n\n"
+                        "🍏 **Apel Terlalu Matang / Hampir Busuk:**\n"
+                        "- Fermentasikan menjadi **Cuka Apel (*Apple Cider Vinegar*)**.\n"
+                        "- Buat **Selai Apel** artisanal untuk pasar kesehatan.\n\n"
+                        "*Ingat:* Gunakan modul **CNN** untuk menyortir apel secara otomatis sebelum masuk pasar segar.",
+                        
+                        "Ini solusi lengkap untuk **menangani apel afkir** agar tetap menghasilkan:\n\n"
+                        "**Tingkat 1 — Cacat Ringan (gores, lecet kecil):**\n"
+                        "- Masih bisa dijual di pasar lokal dengan diskon 20-30%.\n"
+                        "- Atau olah menjadi jus segar kemasan.\n\n"
+                        "**Tingkat 2 — Cacat Berat (memar, bintik besar):**\n"
+                        "- Produksi **Keripik Apel** atau **Manisan Apel**.\n"
+                        "- Potensi margin: Rp 15.000 - 25.000/100gr.\n\n"
+                        "**Tingkat 3 — Hampir Busuk:**\n"
+                        "- Fermentasi menjadi **Cuka Apel** (nilai jual sangat tinggi di pasar premium).\n"
+                        "- Kompos organik untuk pupuk kebun sendiri.\n\n"
+                        "📊 *Sortir menggunakan panel CNN kami untuk klasifikasi otomatis tingkat kerusakan.*",
+                        
+                        "Pertanyaan bagus! **Setiap apel punya nilai**, tinggal bagaimana kita mengolahnya:\n\n"
+                        "- 🥤 **Sari Apel** — Cocok untuk apel cacat fisik tapi rasa masih baik\n"
+                        "- 🍟 **Keripik Apel** — Apel bonyok/lecet bisa di-*slice* tipis dan digoreng vakum\n"
+                        "- 🍯 **Selai & Saus Apel** — Untuk apel yang terlalu matang\n"
+                        "- 🧪 **Cuka Apel Organik** — Apel yang sudah di ambang busuk, fermentasi 2-4 minggu\n"
+                        "- ♻️ **Kompos** — Apel yang benar-benar busuk tetap berguna sebagai pupuk organik\n\n"
+                        "💡 *Dengan diversifikasi produk, waste Anda bisa turun hingga 0%!*"
+                    ]
+                    response += responses[v]
+                    
+                elif any(w in p for w in ["ekspor", "rupiah", "dolar", "luar negeri", "kurs", "valas", "devisa", "internasional", "global", "impor", "perdagangan"]):
+                    responses = [
+                        "Pertanyaan sangat strategis! **Peluang ekspor apel Poncokusumo:**\n\n"
+                        "📈 **Keuntungan Saat Rupiah Melemah:**\n"
+                        "- Margin keuntungan (dalam dolar) akan berlipat saat dikonversi ke Rupiah.\n"
+                        "- Contoh: Jika 1 kg apel dijual $2 dan kurs Rp 16.000, Anda dapat Rp 32.000/kg.\n\n"
+                        "✅ **Syarat Mutlak Ekspor:**\n"
+                        "- Pastikan 100% buah masuk kategori **'Sehat'** dari deteksi CNN.\n"
+                        "- Pasar global mensyaratkan *visual grading* yang sangat ketat.\n"
+                        "- Sertifikasi GAP (Good Agricultural Practices) sangat disarankan.\n\n"
+                        "📊 *Cek grafik Sensitivitas Pelemahan Rupiah di panel Kalkulasi untuk simulasi profit.*",
+                        
+                        "Mari kita analisis **potensi pasar internasional** secara mendalam:\n\n"
+                        "**Negara Target Potensial:**\n"
+                        "- 🇸🇬 Singapura — Pasar premium, demand tinggi untuk buah tropis berkualitas\n"
+                        "- 🇲🇾 Malaysia — Proximity advantage, biaya logistik rendah\n"
+                        "- 🇦🇪 UAE — Pasar high-end, harga jual tinggi\n\n"
+                        "**Persyaratan Kualitas:**\n"
+                        "- Diameter minimum 7cm, warna merata (gunakan CNN untuk verifikasi)\n"
+                        "- Bebas pestisida residu (gunakan organik untuk pasar premium)\n"
+                        "- Packaging standar internasional (karton berlabel)\n\n"
+                        "💡 *Pantau fluktuasi kurs di panel Integrasi Makro (GNN) untuk timing ekspor optimal.*",
+                        
+                        "Berikut **roadmap ekspor** yang bisa Anda ikuti:\n\n"
+                        "1. **Persiapan Kualitas** — Sortir ketat menggunakan modul CNN Dashboard\n"
+                        "2. **Sertifikasi** — Urus GAP, HACCP, atau sertifikasi organik\n"
+                        "3. **Packaging** — Gunakan kemasan food-grade standar ekspor\n"
+                        "4. **Logistik** — Hubungi freight forwarder untuk cold chain delivery\n"
+                        "5. **Kontrak** — Mulai dengan *trial shipment* ke importir Singapura/Malaysia\n\n"
+                        "📊 *Simulasikan potensi revenue di tab Sensitivitas Rupiah pada panel Kalkulasi Harga Jual.*"
+                    ]
+                    response += responses[v]
+                    
+                elif any(w in p for w in ["harga", "jual", "pasar", "murah", "untung", "profit", "pendapatan", "omzet", "margin", "laba", "bersih", "kotor", "diskon", "promo", "bundling", "strategi", "kompetitor", "saingan"]):
+                    responses = [
+                        "Untuk mengoptimalkan **Harga Jual & Profit**, gunakan pendekatan data-driven:\n\n"
+                        "1. **Analisis Sentimen (NLP):** Jika sentimen pasar 'Negatif', gunakan strategi promo *bundling*.\n"
+                        "2. **Dynamic Pricing (GNN):** Harga dihitung berdasarkan graf variabel cuaca + kualitas + makro.\n"
+                        "3. **Segmentasi Pasar:** Jual apel premium (grade A) ke supermarket, grade B ke pasar tradisional.\n\n"
+                        "📊 *Klik tombol **Jalankan Matriks Optimasi** di atas untuk harga rekomendasi hari ini.*",
+                        
+                        "Berikut **framework penetapan harga** yang saya rekomendasikan:\n\n"
+                        "**Metode Cost-Plus Pricing:**\n"
+                        "- HPP (biaya produksi + logistik) + Margin target (25-40%)\n\n"
+                        "**Metode Market-Based Pricing:**\n"
+                        "- Pantau harga kompetitor di pasar Batu & Malang\n"
+                        "- Sesuaikan berdasarkan indeks sentimen konsumen (panel NLP)\n\n"
+                        "**Metode Premium Pricing:**\n"
+                        "- Apel organik bersertifikasi bisa dipatok **2x lipat** harga konvensional\n"
+                        "- Packaging eksklusif meningkatkan *perceived value*\n\n"
+                        "💡 *Gunakan Waterfall Chart di panel Kalkulasi untuk melihat breakdown margin Anda.*",
+                        
+                        "**Strategi harga pintar** berdasarkan kondisi pasar:\n\n"
+                        "| Kondisi Pasar | Strategi Harga | Target Margin |\n"
+                        "|---|---|---|\n"
+                        "| Sentimen Positif | Premium pricing | 35-45% |\n"
+                        "| Sentimen Netral | Competitive pricing | 25-35% |\n"
+                        "| Sentimen Negatif | Bundling/promo | 15-25% |\n"
+                        "| Rupiah Melemah | Fokus ekspor | 40-60% |\n\n"
+                        "🔑 *Kunci sukses:* Jangan pernah jual di bawah HPP. Gunakan Matriks Optimasi Harga di panel atas untuk kalkulasi real-time."
+                    ]
+                    response += responses[v]
+                    
+                elif any(w in p for w in ["cuaca", "hujan", "panas", "angin", "iklim", "kapan", "musim", "suhu", "temperatur", "kemarau", "banjir", "kering", "basah", "matahari", "mendung", "badai", "embun"]):
+                    responses = [
+                        "Berdasarkan **Analisis Prediktif Iklim** kita:\n\n"
+                        "🌡️ **Kondisi Ideal Apel Malang:**\n"
+                        "- **Suhu:** 20-30°C (optimal di ketinggian 700-1200 mdpl)\n"
+                        "- **Curah Hujan:** 1000-1500mm/tahun (moderat)\n"
+                        "- **Kelembapan:** 60-80%\n\n"
+                        "⚠️ **Risiko Cuaca Ekstrem:**\n"
+                        "- Suhu > 35°C → *Sunburn* pada buah, gunakan paranet\n"
+                        "- Curah hujan berlebih → Busuk buah, pastikan drainase baik\n"
+                        "- Angin kencang → Buah jatuh prematur, pasang windbreak\n\n"
+                        "💡 *Gunakan menu **Prediksi Panen** untuk estimasi hasil berdasarkan cuaca hari ini.*",
+                        
+                        "Cuaca adalah **faktor paling krusial** untuk panen apel. Ini panduan lengkapnya:\n\n"
+                        "**Musim Hujan (Nov-Mar):**\n"
+                        "- Risiko utama: jamur dan pembusukan\n"
+                        "- Solusi: Tingkatkan frekuensi penyemprotan fungisida, perbaiki drainase\n\n"
+                        "**Musim Kemarau (Apr-Okt):**\n"
+                        "- Risiko utama: kekeringan dan sunburn\n"
+                        "- Solusi: Irigasi tetes (*drip*), mulsa organik, paranet peneduh\n\n"
+                        "**Masa Transisi:**\n"
+                        "- Waktu terbaik untuk pemupukan dan persiapan pembungaan\n\n"
+                        "📊 *Simulasikan di panel JST dengan memasukkan data suhu, kelembapan, dan curah hujan.*",
+                        
+                        "Ini **korelasi cuaca vs panen** yang perlu Anda ketahui:\n\n"
+                        "| Parameter | Ideal | Dampak Jika Ekstrem |\n"
+                        "|---|---|---|\n"
+                        "| Suhu | 20-30°C | > 35°C: sunburn, < 10°C: pertumbuhan lambat |\n"
+                        "| Curah Hujan | 40-70% | > 80%: busuk akar, < 20%: kekeringan |\n"
+                        "| Kelembapan | 60-80% | > 90%: jamur, < 40%: buah kering |\n"
+                        "| UV Index | 3-7 | > 9: sunburn pada kulit buah |\n\n"
+                        "🔬 *Model Random Forest kita memperhitungkan semua variabel ini. Cek panel Prediksi Panen sekarang!*"
+                    ]
+                    response += responses[v]
+                    
+                elif any(w in p for w in ["halo", "hai", "selamat", "bantu", "siapa", "apa", "bisa", "hi", "hey", "help", "tolong"]):
+                    responses = [
+                        "Halo! 👋 Saya adalah **Asisten AI Eksekutif Poncokusumo**.\n\n"
+                        "Saya siap membantu Anda dengan kecerdasan komputasi canggih. Topik yang bisa kita diskusikan:\n"
+                        "- 📈 Strategi Harga Jual & Potensi Ekspor\n"
+                        "- 🍎 Cara Menangani Apel Busuk / Cacat\n"
+                        "- 🌦️ Dampak Cuaca & Perawatan Kebun\n"
+                        "- 💰 Mitigasi Inflasi & Modal Ekonomi\n"
+                        "- 🔬 Teknologi Pertanian Cerdas\n\n"
+                        "Ketikkan pertanyaan Anda, saya siap menganalisis!",
+                        
+                        "Selamat datang! 🌿 Saya **AI Agribisnis Poncokusumo**, asisten cerdas Anda.\n\n"
+                        "Saya dapat membantu dalam berbagai aspek pengelolaan kebun apel:\n"
+                        "- Menganalisis **kondisi cuaca** terbaik untuk panen\n"
+                        "- Menghitung **harga jual optimal** berdasarkan makroekonomi\n"
+                        "- Memberikan **saran perawatan** tanaman berbasis data\n"
+                        "- Mengidentifikasi **peluang ekspor** berdasarkan kurs valuta\n\n"
+                        "Silakan bertanya apa saja! Saya di sini untuk membantu petani Indonesia.",
+                        
+                        "Hai! 👋 Terima kasih sudah menggunakan **Dashboard AI Poncokusumo**!\n\n"
+                        "Saya asisten AI yang dirancang khusus untuk **petani apel Malang**. "
+                        "Anda bisa menanyakan hal teknis seperti cara memupuk yang benar, "
+                        "atau hal strategis seperti kapan waktu terbaik untuk ekspor.\n\n"
+                        "💡 **Coba tanyakan:**\n"
+                        "- *\"Bagaimana cara menaikkan profit di tengah inflasi?\"*\n"
+                        "- *\"Apel saya banyak yang cacat, bagaimana solusinya?\"*\n"
+                        "- *\"Kapan musim panen terbaik?\"*\n\n"
+                        "Mari mulai! 🍎"
+                    ]
+                    response += responses[v]
+                    
+                elif any(w in p for w in ["terima kasih", "makasih", "thanks", "thank", "mantap", "bagus", "hebat", "keren", "top", "oke", "ok", "sip"]):
+                    responses = [
+                        "Sama-sama! 😊 Senang bisa membantu Anda.\n\n"
+                        "Jika ada pertanyaan lain seputar pertanian apel, jangan ragu untuk bertanya kembali. "
+                        "Saya selalu siap menganalisis data dan memberikan rekomendasi terbaik untuk kebun Anda! 🍎",
+                        
+                        "Terima kasih kembali! 🙏 Semoga informasi tadi bermanfaat untuk operasional kebun Anda.\n\n"
+                        "💡 *Tip:* Jangan lupa untuk rutin mengecek semua panel di Dashboard ini — "
+                        "data yang terupdate akan memberikan insight yang lebih akurat untuk pengambilan keputusan Anda.",
+                        
+                        "Senang bisa membantu! 🌟 Kebun apel Poncokusumo selalu yang terbaik.\n\n"
+                        "Jika Anda butuh analisis lebih mendalam tentang topik tertentu, "
+                        "cukup tanyakan saja. Saya akan memberikan jawaban berbasis data dari semua modul AI kita."
+                    ]
+                    response += responses[v]
+                    
                 else:
-                    response += f"Itu pertanyaan yang sangat menarik mengenai **'{prompt}'**.\n\n" \
-                                "Dalam ekosistem pertanian cerdas Poncokusumo, setiap keputusan harus didukung oleh big data. Saya sarankan Anda untuk mengintegrasikan permasalahan ini dengan 4 pilar analitik utama di *Dashboard* kita:\n" \
-                                "1. **Kuantitas** (Cek panel *Prediksi Cuaca & Panen*)\n" \
-                                "2. **Kualitas** (Cek panel *Visi Komputer CNN*)\n" \
-                                "3. **Pasar** (Cek panel *Sentimen Konsumen NLP*)\n" \
-                                "4. **Makroekonomi** (Cek panel *Optimasi GNN*)\n\n" \
-                                "Dengan memantau dan menghubungkan data dari keempat panel tersebut, Anda dapat mengambil keputusan operasional yang paling menguntungkan."
+                    # Generic fallback yang tetap relevan dan bervariasi
+                    responses = [
+                        f"Pertanyaan menarik tentang **'{prompt}'**! 🤔\n\n"
+                        "Dalam konteks pertanian apel Poncokusumo, saya sarankan pendekatan **4 pilar analitik**:\n\n"
+                        "1. **Kuantitas** — Cek panel *Prediksi Panen* untuk estimasi hasil berdasarkan cuaca\n"
+                        "2. **Kualitas** — Gunakan *Deteksi CNN* untuk sortir kualitas otomatis\n"
+                        "3. **Pasar** — Pantau *Sentimen Konsumen (NLP)* untuk mood pembeli\n"
+                        "4. **Makroekonomi** — Analisis *GNN* untuk faktor inflasi & kurs\n\n"
+                        "Dengan menggabungkan keempat data tersebut, Anda bisa mengambil keputusan yang paling menguntungkan. "
+                        "Silakan tanyakan hal yang lebih spesifik agar saya bisa memberikan analisis yang lebih tajam! 💡",
+                        
+                        f"Terima kasih atas pertanyaan Anda mengenai **'{prompt}'**.\n\n"
+                        "Sebagai konsultan agribisnis AI, izinkan saya memberikan perspektif holistik:\n\n"
+                        "🔍 **Langkah yang Disarankan:**\n"
+                        "- Pertama, pastikan **kondisi cuaca** mendukung (cek panel Prediksi Panen)\n"
+                        "- Kedua, evaluasi **kualitas produk** Anda (gunakan scanner CNN)\n"
+                        "- Ketiga, lihat **tren pasar** (analisis NLP sentimen konsumen)\n"
+                        "- Terakhir, hitung **kalkulasi harga** yang optimal (panel Kalkulasi)\n\n"
+                        "Masing-masing panel di Dashboard ini dirancang untuk saling melengkapi. "
+                        "Apakah ada aspek spesifik yang ingin Anda dalami lebih lanjut?",
+                        
+                        f"Mengenai **'{prompt}'**, ini pandangan saya:\n\n"
+                        "Dalam ekosistem pertanian modern, setiap keputusan harus berbasis data. "
+                        "Dashboard ini menyediakan 5 modul AI yang saling terintegrasi:\n\n"
+                        "- 🌡️ **Prediksi Panen** — Estimasi hasil berbasis cuaca & ML\n"
+                        "- 📸 **Visi Komputer** — Sortir kualitas otomatis via CNN\n"
+                        "- 💬 **Analisis Sentimen** — Pulse check pasar konsumen\n"
+                        "- 🔗 **Graf Neural** — Pemetaan interdependensi faktor\n"
+                        "- 💰 **Kalkulasi Harga** — Optimasi profit berbasis AI\n\n"
+                        "Coba eksplorasi setiap modul dan tanyakan kembali hal yang lebih spesifik — "
+                        "saya akan memberikan jawaban yang lebih mendalam! 🎯"
+                    ]
+                    response += responses[v]
                 
             full_response = ""
-            for chunk in response.split(" "):
+            words = response.split(" ")
+            for i, chunk in enumerate(words):
                 full_response += chunk + " "
-                time.sleep(0.02)
+                # Efek typing yang natural (lebih cepat di awal, sedikit jeda di akhir kalimat)
+                if chunk.endswith(("\n", ".", "!", "?")):
+                    time.sleep(0.04)
+                else:
+                    time.sleep(0.015)
                 message_placeholder.markdown(full_response + "▌")
             message_placeholder.markdown(full_response)
-        st.session_state.messages.append({"role": "assistant", "content": full_response})
+        st.session_state.messages.append({"role": "assistant", "content": full_response})
