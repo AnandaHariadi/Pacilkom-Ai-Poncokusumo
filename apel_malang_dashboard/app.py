@@ -774,7 +774,7 @@ elif menu == "5. Kalkulasi Harga Jual":
                 try:
                     import google.generativeai as genai
                     model = genai.GenerativeModel("gemini-1.5-flash")
-                    ai_prompt = f"Anda adalah konsultan ahli agribisnis dan Asisten AI Petani Apel di Poncokusumo, Malang. Anda memahami cuaca, penyakit apel (sehat, cacat, busuk), makroekonomi (inflasi, kurs Rupiah), dan NLP sentimen pasar. Jawab pertanyaan petani berikut dengan ramah, profesional, praktis, dan bahasa Indonesia yang mudah dipahami: {prompt}"
+                    ai_prompt = f"Anda adalah konsultan ahli agribisnis dan Asisten AI Petani Apel di Poncokusumo, Malang. Anda memahami cuaca, penyakit apel (sehat, cacat, busuk), makroekonomi (inflasi, kurs Rupiah), dan NLP sentimen pasar. Jawab pertanyaan petani berikut dengan format Markdown yang sangat rapi (gunakan bold, bullet points, dan paragraf yang terstruktur) layaknya AI Chatbot canggih, agar terlihat profesional, solutif, dan mendalam: {prompt}"
                     
                     response_obj = model.generate_content(ai_prompt)
                     response = response_obj.text
@@ -784,21 +784,55 @@ elif menu == "5. Kalkulasi Harga Jual":
                     
             if not gemini_api_key:
                 if any(w in p for w in ["inflasi", "biaya", "uang", "modal", "rugi"]):
-                    response += "Terkait keuangan dan biaya, jika inflasi tinggi, biaya logistik dan pupuk akan ikut naik. Fokuslah pada efisiensi biaya, gunakan pupuk organik lokal, atau simpan hasil panen di cold storage jika harga sedang jatuh."
+                    response += "Halo! Berdasarkan analisis makroekonomi saat ini, ini strategi terbaik untuk menghadapi **lonjakan biaya dan inflasi**:\n\n" \
+                                "1. **Efisiensi Logistik:** Kurangi frekuensi distribusi dengan memaksimalkan kapasitas angkut per perjalanan.\n" \
+                                "2. **Pupuk Alternatif:** Mengingat harga pupuk impor naik akibat inflasi, beralihlah ke pupuk organik lokal atau kompos mandiri untuk menekan Harga Pokok Produksi (HPP).\n" \
+                                "3. **Manajemen Penyimpanan:** Jika harga pasar sedang jatuh akibat daya beli menurun, manfaatkan *cold storage* untuk menunda penjualan hingga harga stabil.\n\n" \
+                                "💡 *Saran pro:* Cek tab **Kalkulasi Harga Jual** di atas untuk memantau titik impas (*break-even point*) Anda secara *real-time*."
                 elif any(w in p for w in ["pupuk", "perawatan", "tanam", "daun", "hama", "penyakit", "saran"]):
-                    response += "Terkait perawatan kebun, untuk meningkatkan kualitas panen, gunakan pupuk organik secara berkala. Pastikan pengairan optimal terutama saat kemarau. Semprot pestisida nabati jika ada hama, dan pangkas daun agar buah apel mendapat cukup sinar matahari."
+                    response += "Tentu, mari kita bahas **Strategi Perawatan & Pemupukan Optimal** untuk apel Poncokusumo:\n\n" \
+                                "1. **Pemupukan Berimbang:** Gunakan pupuk NPK pada fase vegetatif, dan tingkatkan Kalium saat pembuahan agar apel lebih manis dan warnanya merah cerah.\n" \
+                                "2. **Manajemen Kanopi (Pemangkasan):** Pangkas daun tua secara rutin. Ini memastikan sinar matahari masuk ke sela-sela buah untuk pigmentasi maksimal, sehingga lolos deteksi 'Sehat' pada mesin pemindai CNN.\n" \
+                                "3. **Pengendalian Hama (IPM):** Semprotkan pestisida nabati (seperti ekstrak mimba) secara preventif, terutama saat kelembapan tinggi yang memicu jamur *Marssonina coronaria*.\n\n" \
+                                "*Semoga panen Anda melimpah!*"
                 elif any(w in p for w in ["busuk", "cacat", "jelek", "afkir", "rusak"]):
-                    response += "Untuk apel yang terdeteksi cacat atau busuk (afkir), jangan dibuang. Olah menjadi produk turunan *added-value* seperti sari apel, keripik apel, atau cuka apel yang harganya jauh lebih stabil di pasaran."
+                    response += "Jangan khawatir, apel afkir (cacat/busuk) **bukan berarti kerugian total**. Berikut strategi *Added-Value* yang bisa Anda terapkan:\n\n" \
+                                "🍎 **Apel Cacat Fisik / Gores:**\n" \
+                                "- Olah menjadi **Keripik Apel** atau **Sari Apel** kemasan. Margin keuntungannya bisa lebih tinggi daripada menjual apel segar.\n" \
+                                "🍏 **Apel Terlalu Matang / Hampir Busuk:**\n" \
+                                "- Fermentasikan menjadi **Cuka Apel (*Apple Cider Vinegar*)**. Pasar kesehatan sangat meminati produk ini dengan harga premium.\n\n" \
+                                "*Ingat:* Sistem CNN kita di atas sudah diprogram untuk menyortir buah secara otomatis. Pastikan hanya apel Sehat yang masuk ke pasar segar."
                 elif any(w in p for w in ["ekspor", "rupiah", "dolar", "luar negeri", "kurs"]):
-                    response += "Pasar ekspor sangat menguntungkan saat Rupiah melemah terhadap USD. Pastikan kualitas apel Anda memenuhi standar 'Sehat' dari deteksi CNN kita, karena ekspor mensyaratkan *grading* yang sangat ketat."
+                    response += "Pertanyaan yang sangat strategis! **Kondisi nilai tukar Rupiah (IDR) saat ini** memberikan peluang emas untuk ekspor:\n\n" \
+                                "- **Insentif Valas:** Saat Rupiah melemah terhadap USD, margin keuntungan dari penjualan ekspor (dalam dolar) akan berlipat ganda saat dikonversi ke Rupiah.\n" \
+                                "- **Syarat Mutlak Ekspor:** Pasar global sangat ketat terhadap *visual grading*. Gunakan modul **Deteksi Kualitas CNN** kita untuk memastikan 100% buah yang diekspor masuk kategori 'Sehat' (tanpa bintik/cacat).\n\n" \
+                                "Silakan cek grafik *Sensitivitas Pelemahan Rupiah* di panel kalkulasi untuk melihat simulasi lonjakan profit Anda."
                 elif any(w in p for w in ["harga", "jual", "pasar", "murah", "mahal", "untung", "profit"]):
-                    response += "Harga jual sangat dipengaruhi oleh kualitas buah, sentimen pasar (NLP), dan faktor makro (GNN). Cek hasil dari panel Kalkulasi. Jika sentimen sedang negatif, coba strategi promo bundling untuk menarik minat konsumen."
+                    response += "Untuk mengoptimalkan **Harga Jual dan Profit**, kita harus mengandalkan data, bukan sekadar insting:\n\n" \
+                                "1. **Analisis Sentimen (NLP):** Jika modul persepsi konsumen menunjukkan sentimen 'Negatif' (misal daya beli masyarakat turun), hindari mematok harga premium. Gunakan strategi promo *bundling*.\n" \
+                                "2. **Dynamic Pricing (GNN):** Harga dasar produksi kita hitung dengan graf, lalu ditambahkan dengan volatilitas inflasi. Selalu patuhi batas bawah (*floor price*) yang disarankan di panel.\n\n" \
+                                "Gunakan fitur **Jalankan Matriks Optimasi Harga Kompleks** di menu atas untuk mendapatkan harga paling ideal hari ini."
                 elif any(w in p for w in ["cuaca", "hujan", "panas", "angin", "iklim", "kapan"]):
-                    response += "Kondisi cuaca sangat menentukan hasil panen. Berdasarkan model JST kita, suhu rata-rata 20-30°C dan curah hujan moderat adalah kondisi paling ideal untuk apel Malang. Anda bisa mensimulasikannya di menu Prediksi Panen."
+                    response += "Berdasarkan **Analisis Prediktif Iklim (JST / Random Forest)**, iklim sangat memengaruhi tonase panen Anda:\n\n" \
+                                "- **Suhu Ideal:** 20-30°C. Jika terlalu panas, apel bisa mengalami *sunburn*.\n" \
+                                "- **Curah Hujan Moderat:** Sangat penting untuk pembesaran buah, tetapi curah hujan berlebih di masa panen dapat menurunkan tingkat kemanisan (*Brix*).\n\n" \
+                                "💡 *Saran AI:* Gunakan menu **Prediksi Panen (MLP/RF)** di sisi kiri, masukkan data cuaca hari ini, dan sistem akan mengestimasi sisa panen Anda secara presisi (Ton/Hektar)."
                 elif any(w in p for w in ["halo", "hai", "selamat", "bantu", "siapa"]):
-                    response += "Halo! Saya adalah AI Asisten Petani Poncokusumo. Anda bisa menanyakan apa saja seputar perawatan kebun apel, strategi harga, cuaca, atau cara menangani apel afkir."
+                    response += "Halo! 👋 Saya adalah **Asisten AI Eksekutif Poncokusumo**.\n\n" \
+                                "Saya dilengkapi dengan kecerdasan komputasi canggih untuk membantu Anda mengelola kebun apel. Anda bisa bertanya secara rinci tentang:\n" \
+                                "- 📈 Strategi Harga Jual & Potensi Ekspor\n" \
+                                "- 🍎 Cara Menangani Apel Busuk / Cacat\n" \
+                                "- 🌦️ Dampak Cuaca & Perawatan Kebun\n" \
+                                "- 💰 Mitigasi Inflasi & Modal Ekonomi\n\n" \
+                                "Ketikkan pertanyaan Anda, dan saya akan menganalisisnya berdasarkan basis data terpadu agribisnis kita!"
                 else:
-                    response += f"Menarik sekali Anda menanyakan soal '{prompt}'. Dalam konteks pertanian apel di Poncokusumo, hal tersebut sangat berkaitan dengan bagaimana kita mengelola sumber daya kebun secara efisien. Saya sarankan Anda untuk mengintegrasikan pengamatan tersebut dengan metrik yang ada di Dashboard ini (seperti tren Cuaca di panel Prediksi atau tren Sentimen Pasar) agar mendapatkan strategi panen yang paling menguntungkan."
+                    response += f"Itu pertanyaan yang sangat menarik mengenai **'{prompt}'**.\n\n" \
+                                "Dalam ekosistem pertanian cerdas Poncokusumo, setiap keputusan harus didukung oleh big data. Saya sarankan Anda untuk mengintegrasikan permasalahan ini dengan 4 pilar analitik utama di *Dashboard* kita:\n" \
+                                "1. **Kuantitas** (Cek panel *Prediksi Cuaca & Panen*)\n" \
+                                "2. **Kualitas** (Cek panel *Visi Komputer CNN*)\n" \
+                                "3. **Pasar** (Cek panel *Sentimen Konsumen NLP*)\n" \
+                                "4. **Makroekonomi** (Cek panel *Optimasi GNN*)\n\n" \
+                                "Dengan memantau dan menghubungkan data dari keempat panel tersebut, Anda dapat mengambil keputusan operasional yang paling menguntungkan."
                 
             full_response = ""
             for chunk in response.split(" "):
